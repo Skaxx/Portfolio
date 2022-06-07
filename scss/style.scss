@@ -1,0 +1,289 @@
+@import "./colors";
+@import "./sizes";
+@import "./fonts";
+
+body {
+  box-sizing: border-box;
+  max-width: $max;
+
+  background-image: $bg-color;
+  color: $font-regular-color;
+}
+
+nav {
+  background-color: $menu-bg-color;
+  div {
+    #author {
+      font-family: $font-author-family;
+      font-size: 16px;
+
+      color: white;
+    }
+
+    div {
+      font-family: $font-regular-family;
+
+      ul {
+        li {
+          font-family: $font-regular-family;
+          font-size: 22px;
+
+          padding: 0.1em;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  width: auto;
+  min-height: 100vh;
+  margin-top: 50px;
+
+  padding-bottom: 2.5em;
+
+  .greetings-txt {
+    font-family: $font-regular-family;
+    font-size: 38px;
+    text-align: center;
+
+    padding-top: 1em;
+
+    .greetings-txt-animation {
+      transition: color 0.2s ease;
+    }
+
+    .greetings-txt-animation:hover {
+      color: $font-hover-color;
+    }
+  }
+
+  #bio-intro {
+    text-align: center;
+
+    .bio-intro-txt {
+      font-family: $font-regular-family;
+      font-size: 28px;
+      text-align: justify;
+
+      padding: 1em;
+      border-left: 2px solid black;
+      transition: color 0.5s ease;
+    }
+
+    .bio-intro-txt:hover {
+      color: $font-hover-color;
+    }
+
+    #profile-pic {
+      animation-name: floating;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+
+      border-radius: 50%;
+
+      text-decoration: none;
+      margin-bottom: 4em;
+    }
+
+    #profile-pic:hover {
+      animation-play-state: paused, running;
+    }
+
+    .profile-pic-info {
+      font-family: $font-regular-family;
+      font-size: 36px;
+    }
+  }
+
+  #bio-txt {
+    font-family: $font-regular-family;
+    font-size: 40px;
+    text-align: justify;
+
+    .bio-txt-top {
+      font-size: 34px;
+
+      padding: 1em;
+      border-left: 4px solid black;
+
+      transition: color 0.5s ease;
+    }
+
+    .bio-txt-top:hover {
+      color: $font-hover-color;
+    }
+
+    .bio-txt-mid {
+      font-size: 28px;
+    }
+
+    p {
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .bio-txt-bottom {
+      text-align: center;
+
+    }
+  }
+
+  .progress {
+    font-size: 18;
+  }
+
+  #btn-collapse {
+    font-family: $font-regular-family;
+    text-align: center;
+
+    padding: 2.5em;
+  }
+
+  #iframe-project-c-1 {
+    padding: 1em;
+
+    text-align: center;
+
+    p {
+      font-family: $font-regular-family;
+      font-size: 28px;
+
+      padding: 1em;
+
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+
+  #iframe-project-p-1 {
+    padding: 1em;
+
+    text-align: center;
+
+    p {
+      font-family: $font-regular-family;
+      font-size: 28px;
+
+      padding: 1em;
+
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+
+  #iframe-map-contact {
+    text-align: center;
+
+    padding: 1em;
+  }
+
+  #contact-info {
+    font-family: $font-regular-family;
+    font-size: 28px;
+    text-align: center;
+
+    padding: 1em;
+
+    p{
+      a{
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  background-color: $ft-color;
+  color: white;
+
+  font-family: sans-serif;
+
+  #social {
+    padding: 0.4em;
+  }
+
+  span {
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0.2em;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+/* Img floating */
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 25px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
+}
+
+/* Loader */
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook span {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: $loader-color;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook span:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.36s;
+}
+.lds-facebook span:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.18s;
+}
+.lds-facebook span:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* Loader end */

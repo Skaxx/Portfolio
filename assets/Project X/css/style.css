@@ -1,0 +1,127 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1a1a1a;
+  background-image: url("../img/octopus.png");
+  background-size: 55%;
+  background-position: center 150px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: "Sora", sans-serif;
+  font-size: 18px;
+}
+
+#nav {
+  background-color: #202020;
+}
+
+#container {
+  min-height: 100vh;
+}
+
+#container #content-index .title-header {
+  margin-top: 5em;
+  text-align: center;
+  -webkit-transition: color 0.8s ease-in;
+  transition: color 0.8s ease-in;
+}
+
+#container #content-index .title-header:hover {
+  color: #198754;
+}
+
+#container #content-index .title-main {
+  font-size: 60px;
+}
+
+#container #content-index p {
+  color: white;
+  font-size: x-large;
+  text-align: center;
+}
+
+#container #content-index ul li {
+  width: 90%;
+  color: white;
+  font-size: large;
+  text-align: left;
+  padding: 0.2em;
+}
+
+#container #content-index ul li span {
+  color: #198754;
+}
+
+#container #content-form section {
+  padding-top: 10em;
+}
+
+#container #content-form section p {
+  text-align: center;
+  font-size: x-large;
+  color: #dc3545;
+}
+
+#container #content-form section .form-header {
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+#container #content-form section .form-header:hover {
+  color: #198754;
+}
+
+#container #content-form section h1 {
+  font-size: 45px;
+  text-align: left;
+}
+
+#container #content-form section form {
+  width: 300px;
+}
+
+#container #content-profile .title-header {
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+#container #content-profile .title-header:hover {
+  color: #198754;
+}
+
+#container #content-profile h1 {
+  text-align: center;
+  padding-top: 5em;
+}
+
+#container #content-profile p {
+  text-align: center;
+  font-size: x-large;
+  color: white;
+  padding-top: 2em;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #202020;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+#footer hr {
+  width: 75%;
+  margin: auto;
+}
+
+#footer .profile-logo {
+  border-radius: 5%;
+  padding: 0.2em;
+}
+/*# sourceMappingURL=style.css.map */

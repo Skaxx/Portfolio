@@ -1,0 +1,314 @@
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  max-width: auto;
+  background-image: url(../img/white-waves.png);
+  color: black;
+}
+
+nav {
+  background-color: royalblue;
+}
+
+nav div #author {
+  font-family: "Rock Salt", cursive;
+  font-size: 16px;
+  color: white;
+}
+
+nav div div {
+  font-family: "Staatliches", cursive;
+}
+
+nav div div ul li {
+  font-family: "Staatliches", cursive;
+  font-size: 22px;
+  padding: 0.1em;
+}
+
+.container {
+  width: auto;
+  min-height: 100vh;
+  margin-top: 50px;
+  padding-bottom: 2.5em;
+}
+
+.container .greetings-txt {
+  font-family: "Staatliches", cursive;
+  font-size: 38px;
+  text-align: center;
+  padding-top: 1em;
+}
+
+.container .greetings-txt .greetings-txt-animation {
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.container .greetings-txt .greetings-txt-animation:hover {
+  color: royalblue;
+}
+
+.container #bio-intro {
+  text-align: center;
+}
+
+.container #bio-intro .bio-intro-txt {
+  font-family: "Staatliches", cursive;
+  font-size: 28px;
+  text-align: justify;
+  padding: 1em;
+  border-left: 2px solid black;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.container #bio-intro .bio-intro-txt:hover {
+  color: royalblue;
+}
+
+.container #bio-intro #profile-pic {
+  -webkit-animation-name: floating;
+          animation-name: floating;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+          animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  border-radius: 50%;
+  text-decoration: none;
+  margin-bottom: 4em;
+}
+
+.container #bio-intro #profile-pic:hover {
+  -webkit-animation-play-state: paused, running;
+          animation-play-state: paused, running;
+}
+
+.container #bio-intro .profile-pic-info {
+  font-family: "Staatliches", cursive;
+  font-size: 36px;
+}
+
+.container #bio-txt {
+  font-family: "Staatliches", cursive;
+  font-size: 40px;
+  text-align: justify;
+}
+
+.container #bio-txt .bio-txt-top {
+  font-size: 34px;
+  padding: 1em;
+  border-left: 4px solid black;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.container #bio-txt .bio-txt-top:hover {
+  color: royalblue;
+}
+
+.container #bio-txt .bio-txt-mid {
+  font-size: 28px;
+}
+
+.container #bio-txt p a {
+  text-decoration: none;
+}
+
+.container #bio-txt .bio-txt-bottom {
+  text-align: center;
+}
+
+.container .progress {
+  font-size: 18;
+}
+
+.container #btn-collapse {
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  padding: 2.5em;
+}
+
+.container #iframe-project-c-1 {
+  padding: 1em;
+  text-align: center;
+}
+
+.container #iframe-project-c-1 p {
+  font-family: "Staatliches", cursive;
+  font-size: 28px;
+  padding: 1em;
+}
+
+.container #iframe-project-c-1 p a {
+  text-decoration: none;
+}
+
+.container #iframe-project-p-1 {
+  padding: 1em;
+  text-align: center;
+}
+
+.container #iframe-project-p-1 p {
+  font-family: "Staatliches", cursive;
+  font-size: 28px;
+  padding: 1em;
+}
+
+.container #iframe-project-p-1 p a {
+  text-decoration: none;
+}
+
+.container #iframe-map-contact {
+  text-align: center;
+  padding: 1em;
+}
+
+.container #contact-info {
+  font-family: "Staatliches", cursive;
+  font-size: 28px;
+  text-align: center;
+  padding: 1em;
+}
+
+.container #contact-info p a {
+  text-decoration: none;
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: royalblue;
+  color: white;
+  font-family: sans-serif;
+}
+
+#footer #social {
+  padding: 0.4em;
+}
+
+#footer span {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0.2em;
+}
+
+#footer span a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Img floating */
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+@keyframes floating {
+  0% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+  50% {
+    -webkit-transform: translate(0, 25px);
+            transform: translate(0, 25px);
+  }
+  100% {
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+/* Loader */
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-facebook span {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: royalblue;
+  -webkit-animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+          animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.lds-facebook span:nth-child(1) {
+  left: 8px;
+  -webkit-animation-delay: -0.36s;
+          animation-delay: -0.36s;
+}
+
+.lds-facebook span:nth-child(2) {
+  left: 32px;
+  -webkit-animation-delay: -0.18s;
+          animation-delay: -0.18s;
+}
+
+.lds-facebook span:nth-child(3) {
+  left: 56px;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+}
+
+@-webkit-keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+/* Loader end */
+/*# sourceMappingURL=style.css.map */
