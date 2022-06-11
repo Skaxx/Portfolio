@@ -54,7 +54,7 @@
 
 </head>
 
-<body>
+<body onload="date();">
 
     <nav class="navbar navbar-expand-sm navbar-light fixed-top shadow-lg">
         <div class="container-fluid">
@@ -75,12 +75,8 @@
                     <li>
                         <a class="nav-link" href="project-p.html">Projekty własne</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"></a>
-                    </li>
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Kontakt</a>
                     </li>
@@ -178,7 +174,7 @@
     </div>
 
     <div id="footer">
-        <span id="social" class="col-4">
+        <span id="social" class="col-4 mt-1">
             <a href="https://www.linkedin.com/in/patrykpietrzyk/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" fill="currentColor" class="bi bi-linkedin"
                     viewBox="0 0 16 16">
@@ -194,7 +190,15 @@
                 </svg>
             </a>
         </span>
-        <span class="col-4"> &copy; 2022 Patryk Pietrzyk - Wszelkie Prawa Zastrzeżone</span>
+        <span class="col-4 mt-1"> &copy; 2022 Patryk Pietrzyk - Wszelkie Prawa Zastrzeżone</span>
+        <span class="col-4 mt-1">
+            <div class="day"></div>
+            
+            <span id="time">
+                <span class="hours"></span> :
+                <span class="minutes"></span>
+            </span>
+        </span>
     </div>
 
     <div class="loader-wrapper">
