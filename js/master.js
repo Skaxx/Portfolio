@@ -23,8 +23,8 @@ function date() {
     const runClock = () => {
       const now = new Date()
       day.innerText = days[now.getDay()]
-      hours.innerText = now.getHours()
-      minutes.innerText = now.getMinutes()
+      hours.innerText = now.getHours()<10?'0'+now.getHours():now.getHours();
+      minutes.innerText = now.getMinutes()<10?'0'+now.getMinutes():now.getMinutes();
     }
     runClock()
     setInterval(runClock, 1000)
