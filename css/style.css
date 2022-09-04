@@ -9,17 +9,14 @@ body {
 nav {
   background-color: royalblue;
 }
-
 nav div #author {
   font-family: "Rock Salt", cursive;
   font-size: 16px;
   color: white;
 }
-
 nav div div {
   font-family: "Staatliches", cursive;
 }
-
 nav div div ul li {
   font-family: "Staatliches", cursive;
   font-size: 22px;
@@ -32,27 +29,22 @@ nav div div ul li {
   margin-top: 50px;
   padding-bottom: 2.5em;
 }
-
 .container .greetings-txt {
   font-family: "Staatliches", cursive;
   font-size: 38px;
   text-align: center;
   padding-top: 1em;
 }
-
 .container .greetings-txt .greetings-txt-animation {
   -webkit-transition: color 0.2s ease;
   transition: color 0.2s ease;
 }
-
 .container .greetings-txt .greetings-txt-animation:hover {
   color: royalblue;
 }
-
 .container #bio-intro {
   text-align: center;
 }
-
 .container #bio-intro .bio-intro-txt {
   font-family: "Staatliches", cursive;
   font-size: 28px;
@@ -62,11 +54,9 @@ nav div div ul li {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-
 .container #bio-intro .bio-intro-txt:hover {
   color: royalblue;
 }
-
 .container #bio-intro #profile-pic {
   -webkit-animation-name: floating;
           animation-name: floating;
@@ -76,27 +66,23 @@ nav div div ul li {
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
           animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
-  border-radius: 50%;
+  border-radius: 5%;
   text-decoration: none;
   margin-bottom: 4em;
 }
-
 .container #bio-intro #profile-pic:hover {
   -webkit-animation-play-state: paused, running;
           animation-play-state: paused, running;
 }
-
 .container #bio-intro .profile-pic-info {
   font-family: "Staatliches", cursive;
   font-size: 36px;
 }
-
 .container #bio-txt {
   font-family: "Staatliches", cursive;
   font-size: 40px;
   text-align: justify;
 }
-
 .container #bio-txt .bio-txt-top {
   font-size: 34px;
   padding: 1em;
@@ -104,75 +90,60 @@ nav div div ul li {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-
 .container #bio-txt .bio-txt-top:hover {
   color: royalblue;
 }
-
 .container #bio-txt .bio-txt-mid {
   font-size: 28px;
 }
-
 .container #bio-txt p a {
   text-decoration: none;
 }
-
 .container #bio-txt .bio-txt-bottom {
   text-align: center;
 }
-
 .container .progress {
   font-size: 18;
 }
-
 .container #btn-collapse {
   font-family: "Staatliches", cursive;
   text-align: center;
   padding: 2.5em;
 }
-
 .container #iframe-project-c-1 {
   padding: 1em;
   text-align: center;
 }
-
 .container #iframe-project-c-1 p {
   font-family: "Staatliches", cursive;
   font-size: 28px;
   padding: 1em;
 }
-
 .container #iframe-project-c-1 p a {
   text-decoration: none;
 }
-
 .container #iframe-project-p-1 {
   padding: 1em;
   text-align: center;
 }
-
 .container #iframe-project-p-1 p {
   font-family: "Staatliches", cursive;
   font-size: 28px;
   padding: 1em;
 }
-
 .container #iframe-project-p-1 p a {
   text-decoration: none;
 }
-
 .container #iframe-map-contact {
   text-align: center;
   padding: 1em;
 }
-
 .container #contact-info {
   font-family: "Staatliches", cursive;
   font-size: 28px;
   text-align: center;
   padding: 1em;
 }
-
 .container #contact-info p a {
   text-decoration: none;
 }
@@ -189,17 +160,14 @@ nav div div ul li {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
-
 #footer #social {
   padding: 0.4em;
 }
-
 #footer span {
   text-align: center;
   letter-spacing: 1px;
   padding: 0.2em;
 }
-
 #footer span a {
   text-decoration: none;
   color: white;
@@ -234,7 +202,6 @@ nav div div ul li {
             transform: translate(0, 0px);
   }
 }
-
 /* Loader */
 .loader-wrapper {
   width: 100%;
@@ -309,6 +276,4 @@ nav div div ul li {
     height: 32px;
   }
 }
-
-/* Loader end */
-/*# sourceMappingURL=style.css.map */
+/* Loader end *//*# sourceMappingURL=style.css.map */
