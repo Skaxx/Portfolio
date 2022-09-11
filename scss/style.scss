@@ -127,7 +127,6 @@ nav {
 
     .bio-txt-bottom {
       text-align: center;
-
     }
   }
 
@@ -153,7 +152,7 @@ nav {
 
       padding: 1em;
 
-      a{
+      a {
         text-decoration: none;
       }
     }
@@ -170,7 +169,7 @@ nav {
 
       padding: 1em;
 
-      a{
+      a {
         text-decoration: none;
       }
     }
@@ -189,8 +188,8 @@ nav {
 
     padding: 1em;
 
-    p{
-      a{
+    p {
+      a {
         text-decoration: none;
       }
     }
@@ -260,7 +259,7 @@ nav {
   left: 8px;
   width: 16px;
   background: $loader-color;
-  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+  animation: §lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
 }
 .lds-facebook span:nth-child(1) {
   left: 8px;
