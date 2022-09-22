@@ -62,17 +62,16 @@ function dateENG() {
   setInterval(runClock, 1000);
 }
 
-let PL = document.querySelector(".PL");
-let ENG = document.querySelector(".ENG");
-
-function lngPick() {
+document.addEventListener("DOMContentLoaded", function(){
   document.getElementById("lngPick").onchange = function lngPick() {
-    if (this.value == "Polish") {
+    if (this.value === "Polish") {
       window.location.href = "https://patryk-pietrzyk.pl/index.html";
     }
 
-    if (this.value == "English") {
+    if (this.value === "English") {
       window.location.href = "https://patryk-pietrzyk.pl/indexENG.html";
     }
   };
-}
+  
+  console.log("DOM has been fully loaded and parsed.");
+});
