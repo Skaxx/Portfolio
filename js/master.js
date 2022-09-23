@@ -54,15 +54,17 @@ function dateENG() {
   const runClock = () => {
     const now = new Date();
     day.innerText = days[now.getDay()];
-    hours.innerText = now.getHours < 10 ? "0" + now.getHours() : now.getHours();
+    hours.innerText =
+      now.getHours() < 10 ? "0" + now.getHours() : now.getHours();
     minutes.innerText =
       now.getMinutes() < 10 ? "0" + now.getMinutes() : now.getMinutes();
   };
+
   runClock();
   setInterval(runClock, 1000);
 }
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("lngPick").onchange = function lngPick() {
     if (this.value === "Polish") {
       window.location.href = "https://patryk-pietrzyk.pl/index.html";
@@ -72,6 +74,6 @@ document.addEventListener("DOMContentLoaded", function(){
       window.location.href = "https://patryk-pietrzyk.pl/indexENG.html";
     }
   };
-  
+
   console.log("DOM has been fully loaded and parsed.");
 });
