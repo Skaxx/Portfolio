@@ -16,12 +16,19 @@ nav div #author {
   color: white;
 }
 nav div div {
-  font-family: "Staatliches", cursive;
+  font-family: "Sen", sans-serif;
 }
 nav div div ul li {
-  font-family: "Staatliches", cursive;
+  font-family: "Sen", sans-serif;
   font-size: 22px;
   padding: 0.1em;
+}
+nav div div .dropdown-item {
+  letter-spacing: 1px;
+}
+
+#side-menu {
+  font-family: "Sen", sans-serif;
 }
 
 .container {
@@ -47,7 +54,7 @@ nav div div ul li {
   text-align: center;
 }
 .container #bio-intro .bio-intro-txt {
-  font-family: "Staatliches", cursive;
+  font-family: "Sen", sans-serif;
   font-size: 28px;
   text-align: justify;
   padding: 1em;
@@ -57,6 +64,12 @@ nav div div ul li {
 }
 .container #bio-intro .bio-intro-txt:hover {
   color: royalblue;
+}
+.container #bio-intro #modal-btn-lng {
+  font-family: "Sen", sans-serif;
+}
+.container #bio-intro #modal-lng {
+  font-family: "Sen", sans-serif;
 }
 .container #bio-intro #profile-pic {
   -webkit-animation-name: floating;
@@ -76,16 +89,15 @@ nav div div ul li {
           animation-play-state: paused, running;
 }
 .container #bio-intro .profile-pic-info {
-  font-family: "Staatliches", cursive;
+  font-family: "Sen", sans-serif;
   font-size: 36px;
 }
 .container #bio-txt {
-  font-family: "Staatliches", cursive;
-  font-size: 40px;
+  font-family: "Sen", sans-serif;
   text-align: justify;
 }
 .container #bio-txt .bio-txt-top {
-  font-size: 34px;
+  font-size: 28px;
   padding: 1em;
   border-left: 4px solid black;
   -webkit-transition: color 0.5s ease;
@@ -94,17 +106,24 @@ nav div div ul li {
 .container #bio-txt .bio-txt-top:hover {
   color: royalblue;
 }
-.container #bio-txt .bio-txt-mid {
-  font-size: 28px;
+.container #bio-txt .bio-txt-bottom {
+  font-size: 20px;
 }
-.container #bio-txt p a {
+.container #bio-txt .bio-txt-bottom a {
   text-decoration: none;
 }
-.container #bio-txt .bio-txt-bottom {
+.container h4 {
+  letter-spacing: 1px;
+  padding: 0.5em;
   text-align: center;
+  font-family: "Staatliches", cursive;
+  font-size: xx-large;
+}
+.container h2 {
+  font-family: "Sen", sans-serif;
 }
 .container .progress {
-  font-size: 18;
+  font-size: 16;
 }
 .container #btn-collapse {
   font-family: "Staatliches", cursive;
@@ -115,38 +134,81 @@ nav div div ul li {
   padding: 1em;
   text-align: center;
 }
+.container #iframe-project-c-1 iframe {
+  border: 0.5em;
+  border-style: solid;
+  border-color: royalblue;
+}
 .container #iframe-project-c-1 p {
-  font-family: "Staatliches", cursive;
-  font-size: 28px;
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
   padding: 1em;
 }
 .container #iframe-project-c-1 p a {
   text-decoration: none;
 }
-.container #iframe-project-p-1 {
-  padding: 1em;
-  text-align: center;
+.container #iframe-project-c-1 h5 {
+  font-family: "Sen", sans-serif;
+  font-size: x-large;
 }
-.container #iframe-project-p-1 p {
+.container #iframe-project-c-1 h5 a {
+  text-decoration: none;
+}
+.container #squids-project #carauselSquids {
+  margin: auto;
+}
+.container #squids-project #carauselSquids div button {
+  background-color: black;
+}
+.container #squids-project #carauselSquids div div div {
+  background-color: white;
+  color: black;
+}
+.container #squids-project #carauselSquids div div div h5 {
+  letter-spacing: 1px;
   font-family: "Staatliches", cursive;
-  font-size: 28px;
+  font-size: 42px;
+}
+.container #squids-project #carauselSquids div div div p {
+  text-align: center;
+  letter-spacing: 1px;
+  font-family: "Staatliches", cursive;
+  font-size: large;
+}
+.container #squids-project .squids-description {
+  text-align: justify;
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
   padding: 1em;
 }
-.container #iframe-project-p-1 p a {
+.container #squids-project .moreInfo {
+  text-align: center;
+  font-family: "Sen", sans-serif;
+  font-size: x-large;
+}
+.container #squids-project .moreInfo a {
+  text-decoration: none;
+}
+.container #TSL-project p {
+  font-family: black;
+}
+.container #contact-info {
+  font-family: "Sen", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 1em;
+}
+.container #contact-info p a {
   text-decoration: none;
 }
 .container #iframe-map-contact {
   text-align: center;
   padding: 1em;
 }
-.container #contact-info {
-  font-family: "Staatliches", cursive;
-  font-size: 28px;
-  text-align: center;
-  padding: 1em;
-}
-.container #contact-info p a {
-  text-decoration: none;
+.container #iframe-map-contact iframe {
+  border: 0.5em;
+  border-style: solid;
+  border-color: royalblue;
 }
 
 #footer {
@@ -159,10 +221,14 @@ nav div div ul li {
           flex-direction: row;
   background-color: royalblue;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Sen", sans-serif;
+  font-size: medium;
 }
-#footer #social {
-  padding: 0.4em;
+#footer #social select {
+  border: 7.5%;
+  -webkit-appearance: none;
+  width: 3.5em;
+  padding-left: 0.7em;
 }
 #footer span {
   text-align: center;

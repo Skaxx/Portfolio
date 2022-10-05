@@ -12,6 +12,7 @@ body {
 
 nav {
   background-color: $menu-bg-color;
+
   div {
     #author {
       font-family: $font-author-family;
@@ -21,18 +22,26 @@ nav {
     }
 
     div {
-      font-family: $font-regular-family;
+      font-family: $font-description-family;
 
       ul {
         li {
-          font-family: $font-regular-family;
+          font-family: $font-description-family;
           font-size: 22px;
 
           padding: 0.1em;
         }
       }
+
+      .dropdown-item {
+        letter-spacing: 1px;
+      }
     }
   }
+}
+
+#side-menu {
+  font-family: $font-description-family;
 }
 
 .container {
@@ -62,7 +71,7 @@ nav {
     text-align: center;
 
     .bio-intro-txt {
-      font-family: $font-regular-family;
+      font-family: $font-description-family;
       font-size: 28px;
       text-align: justify;
 
@@ -73,6 +82,14 @@ nav {
 
     .bio-intro-txt:hover {
       color: $font-hover-color;
+    }
+
+    #modal-btn-lng {
+      font-family: $font-description-family;
+    }
+
+    #modal-lng {
+      font-family: $font-description-family;
     }
 
     #profile-pic {
@@ -92,18 +109,17 @@ nav {
     }
 
     .profile-pic-info {
-      font-family: $font-regular-family;
+      font-family: $font-description-family;
       font-size: 36px;
     }
   }
 
   #bio-txt {
-    font-family: $font-regular-family;
-    font-size: 40px;
+    font-family: $font-description-family;
     text-align: justify;
 
     .bio-txt-top {
-      font-size: 34px;
+      font-size: 28px;
 
       padding: 1em;
       border-left: 4px solid black;
@@ -115,23 +131,30 @@ nav {
       color: $font-hover-color;
     }
 
-    .bio-txt-mid {
-      font-size: 28px;
-    }
+    .bio-txt-bottom {
+      font-size: $font-regular-size;
 
-    p {
       a {
         text-decoration: none;
       }
     }
+  }
 
-    .bio-txt-bottom {
-      text-align: center;
-    }
+  h4 {
+    letter-spacing: 1px;
+    padding: 0.5em;
+
+    text-align: center;
+    font-family: $font-regular-family;
+    font-size: xx-large;
+  }
+
+  h2 {
+    font-family: $font-description-family;
   }
 
   .progress {
-    font-size: 18;
+    font-size: 16;
   }
 
   #btn-collapse {
@@ -146,9 +169,15 @@ nav {
 
     text-align: center;
 
+    iframe {
+      border: 0.5em;
+      border-style: solid;
+      border-color: royalblue;
+    }
+
     p {
-      font-family: $font-regular-family;
-      font-size: 28px;
+      font-family: $font-description-family;
+      font-size: $font-regular-size;
 
       padding: 1em;
 
@@ -156,19 +185,82 @@ nav {
         text-decoration: none;
       }
     }
+
+    h5 {
+      font-family: $font-description-family;
+      font-size: x-large;
+
+      a {
+        text-decoration: none;
+      }
+    }
   }
 
-  #iframe-project-p-1 {
-    padding: 1em;
+  #squids-project {
+    #carauselSquids {
+      margin: auto;
 
-    text-align: center;
+      div {
+        button {
+          background-color: black;
+        }
+      }
 
-    p {
-      font-family: $font-regular-family;
-      font-size: 28px;
+      div {
+        div {
+          div {
+            background-color: white;
+            color: black;
+
+            h5 {
+              letter-spacing: 1px;
+              font-family: $font-regular-family;
+              font-size: 42px;
+            }
+            p {
+              text-align: center;
+              letter-spacing: 1px;
+              font-family: $font-regular-family;
+              font-size: large;
+            }
+          }
+        }
+      }
+    }
+
+    .squids-description {
+      text-align: justify;
+      font-family: $font-description-family;
+      font-size: $font-regular-size;
 
       padding: 1em;
+    }
 
+    .moreInfo {
+      text-align: center;
+      font-family: $font-description-family;
+      font-size: x-large;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+
+  #TSL-project {
+    p {
+      font-family: $font-regular-color;
+    }
+  }
+
+  #contact-info {
+    font-family: $font-description-family;
+    font-size: $font-regular-size;
+    text-align: center;
+
+    padding: 1em;
+
+    p {
       a {
         text-decoration: none;
       }
@@ -179,19 +271,11 @@ nav {
     text-align: center;
 
     padding: 1em;
-  }
 
-  #contact-info {
-    font-family: $font-regular-family;
-    font-size: 28px;
-    text-align: center;
-
-    padding: 1em;
-
-    p {
-      a {
-        text-decoration: none;
-      }
+    iframe {
+      border: 0.5em;
+      border-style: solid;
+      border-color: royalblue;
     }
   }
 }
@@ -202,10 +286,17 @@ nav {
   background-color: $ft-color;
   color: white;
 
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-description-family;
+  font-size: medium;
 
   #social {
-    padding: 0.4em;
+    select {
+      border: 7.5%;
+      -webkit-appearance: none;
+
+      width: 3.5em;
+      padding-left: 0.7em;
+    }
   }
 
   span {
