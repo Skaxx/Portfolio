@@ -22,6 +22,7 @@ const signUp = (e) => {
     document.querySelector("form").reset();
     document.getElementById("email").focus();
     alert("Konto utworzono!");
+    location.href = "signin.html";
   } else {
     alert("Oooppss...\nTakie dane już istnieją!");
   }

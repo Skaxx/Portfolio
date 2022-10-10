@@ -74,8 +74,8 @@ nav div div .dropdown-item {
 .container #bio-intro #profile-pic {
   -webkit-animation-name: floating;
           animation-name: floating;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
   -webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
@@ -96,6 +96,9 @@ nav div div .dropdown-item {
   font-family: "Sen", sans-serif;
   text-align: justify;
 }
+.container #bio-txt a {
+  text-decoration: none;
+}
 .container #bio-txt .bio-txt-top {
   font-size: 28px;
   padding: 1em;
@@ -106,11 +109,25 @@ nav div div .dropdown-item {
 .container #bio-txt .bio-txt-top:hover {
   color: royalblue;
 }
-.container #bio-txt .bio-txt-bottom {
+.container #bio-txt .bio-txt-middle {
   font-size: 20px;
 }
-.container #bio-txt .bio-txt-bottom a {
-  text-decoration: none;
+.container #bio-txt #cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.container #bio-txt #cards .card {
+  margin: 1em;
 }
 .container h4 {
   letter-spacing: 1px;
@@ -180,6 +197,9 @@ nav div div .dropdown-item {
   font-family: "Sen", sans-serif;
   font-size: 20px;
   padding: 1em;
+}
+.container #squids-project ul li {
+  font-size: medium;
 }
 .container #squids-project .moreInfo {
   text-align: center;

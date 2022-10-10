@@ -94,7 +94,7 @@ nav {
 
     #profile-pic {
       animation-name: floating;
-      animation-duration: 2s;
+      animation-duration: 4s;
       animation-iteration-count: infinite;
       animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
 
@@ -118,6 +118,10 @@ nav {
     font-family: $font-description-family;
     text-align: justify;
 
+    a {
+      text-decoration: none;
+    }
+
     .bio-txt-top {
       font-size: 28px;
 
@@ -131,11 +135,18 @@ nav {
       color: $font-hover-color;
     }
 
-    .bio-txt-bottom {
+    .bio-txt-middle {
       font-size: $font-regular-size;
+    }
 
-      a {
-        text-decoration: none;
+    #cards {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .card {
+        margin: 1em;
       }
     }
   }
@@ -234,6 +245,12 @@ nav {
       font-size: $font-regular-size;
 
       padding: 1em;
+    }
+
+    ul {
+      li {
+        font-size: medium;
+      }
     }
 
     .moreInfo {
