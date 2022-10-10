@@ -1,4 +1,4 @@
-<html lang="ENG">
+<html lang="PL">
 
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
@@ -102,77 +102,91 @@
     <div class="container">
 
         <h1 class="greetings-txt">
-            <span class="greetings-txt-animation">H</span>
-            <span class="greetings-txt-animation">e</span>
-            <span class="greetings-txt-animation">y</span>
-            <span class="greetings-txt-animation">,</span>
-            <br>
-            <span class="greetings-txt-animation">L</span>
-            <span class="greetings-txt-animation">e</span>
-            <span class="greetings-txt-animation">t</span>
-            <span class="greetings-txt-animation">'</span>
+            <span class="greetings-txt-animation">S</span>
+            <span class="greetings-txt-animation">q</span>
+            <span class="greetings-txt-animation">u</span>
+            <span class="greetings-txt-animation">i</span>
+            <span class="greetings-txt-animation">d</span>
             <span class="greetings-txt-animation">s</span>
-            <span class="greetings-txt-animation">&nbsp;</span>
-            <span class="greetings-txt-animation">m</span>
-            <span class="greetings-txt-animation">e</span>
-            <span class="greetings-txt-animation">e</span>
-            <span class="greetings-txt-animation">t</span>
-            <span class="greetings-txt-animation">!</span>
         </h1>
 
-        <div id="bio-intro">
-            <p class="bio-intro-txt">
-                My name is Patryk. <br>
+        <div id="squids-project">
 
-                <br>
-
-                I am a beginner web developer with constantly growing experience, my dream is to become a full time
-                frontend developer!<br>
-                I'm from Silesian region, at the south of Poland, where I put my first steps as a developer.
-            </p>
-
-            <!-- Button trigger modal -->
-            <button id="modal-btn-lng" type="button" class="btn btn-warning m-2" data-bs-toggle="modal"
-                data-bs-target="#modal-lng">
-                Jak zmienić język na Polski?
-            </button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="modal-lng" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Zmiana języka / Language change
-                            </h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div id="carauselSquids" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carauselSquids" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carauselSquids" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carauselSquids" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carauselSquids" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/squid-1.png" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>MAIN SITE</h5>
+                            <p>Przedstawia główne funkcjonalności strony oraz stan zaawansowania projektu.</p>
                         </div>
-                        <div class="modal-body">
-                            Hej!
-                            <br>
-                            Czy wiedziałeś, że od teraz możesz zmienić język strony na angielski?
-                            <br>
-                            Możesz to zrobić na dole strony!
-                            <br>
-                            <hr style="width: 75%; margin-left: 12.5%;">
-                            Hey!
-                            <br>
-                            Did you know that you can change the website language to English from now on?
-                            <br>
-                            You can do it at the bottom of the page!
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/squid-2.png" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>REGISTRATION FORM</h5>
+                            <p>Przedstawia możliwość rejestracji konta z uwzględnieniem walidacji danych oraz ich
+                                autouzupełnieniem - całość jest
+                                zapisywana tymczasowo na pamięci lokalnej przeglądarki</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/squid-3.png" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>LOGIN FORM</h5>
+                            <p>Przedstawia możliwość zalogowania na wcześniej utworzone konto z uwzględnieniem danych
+                                zapisanych za zgodą użytkownika w pamięci podręcznej.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/squid-4.png" class="d-block w-100" alt="">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>PROFILE</h5>
+                            <p>Przedstawia panel profilu na którym użytkownik będzie miał dostęp do swoich znajomych,
+                                postów i wielu innych możliwości powszechnie znanych z innych social mediów.</p>
                         </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carauselSquids"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carauselSquids"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
 
-            <div>
-                <a href="aboutENG.html">
-                    <img class="shadow-lg" id="profile-pic" src="img/prof.jpeg" alt="Profile Pic" width="350px">
+            <p class="squids-description">
+                Squids™ - Mój pierwszy własny projekt który zamierzam rozwijać długofalowo w celu wprowadzenia
+                wszystkich funkcjonalności opisanych na stronie głównej projektu.
+                <br>
+                <br>
+            </p>
+
+            <p class="moreInfo">
+                Więcej informacji znajduje się na stronie <a class="link link-warning"
+                    href="assets/Project X/index.html" target="_blank">
+                    Squids™
                 </a>
                 <br>
-                <span class="profile-pic-info">Click on Me for more information!</span>
-            </div>
+                Zapraszam do zapoznania się!
+            </p>
+
         </div>
+
     </div>
 
     <div class="offcanvas offcanvas-start" style="background-image: url(img/white-waves.png);" tabindex="-1"
@@ -260,7 +274,7 @@
             <span></span>
         </span>
     </div>
-
 </body>
+
 
 </html>
