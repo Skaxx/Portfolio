@@ -72,8 +72,8 @@ nav {
 
     .bio-intro-txt {
       font-family: $font-description-family;
-      font-size: 28px;
-      text-align: justify;
+      font-size: 24px;
+      text-align: left;
 
       padding: 1em;
       border-left: 2px solid black;
@@ -110,20 +110,20 @@ nav {
 
     .profile-pic-info {
       font-family: $font-description-family;
-      font-size: 36px;
+      font-size: 32px;
     }
   }
 
   #bio-txt {
     font-family: $font-description-family;
-    text-align: justify;
+    text-align: left;
 
     a {
       text-decoration: none;
     }
 
     .bio-txt-top {
-      font-size: 28px;
+      font-size: 24px;
 
       padding: 1em;
       border-left: 4px solid black;
@@ -157,7 +157,7 @@ nav {
 
     text-align: center;
     font-family: $font-regular-family;
-    font-size: xx-large;
+    font-size: 38px;
   }
 
   h2 {
@@ -165,7 +165,7 @@ nav {
   }
 
   .progress {
-    font-size: 16;
+    font-size: 14;
   }
 
   #btn-collapse {
@@ -176,12 +176,11 @@ nav {
   }
 
   #iframe-project-c-1 {
-    padding: 1em;
 
     text-align: center;
 
     iframe {
-      border: 0.5em;
+      border: 0.25em;
       border-style: solid;
       border-color: royalblue;
     }
@@ -208,55 +207,31 @@ nav {
   }
 
   #squids-project {
-    #carauselSquids {
-      margin: auto;
 
-      div {
-        button {
-          background-color: black;
-        }
-      }
-
-      div {
-        div {
-          div {
-            background-color: white;
-            color: black;
-
-            h5 {
-              letter-spacing: 1px;
-              font-family: $font-regular-family;
-              font-size: 42px;
-            }
-            p {
-              text-align: center;
-              letter-spacing: 1px;
-              font-family: $font-regular-family;
-              font-size: large;
-            }
-          }
-        }
-      }
+    iframe {
+      border: 0.25em;
+      border-style: solid;
+      border-color: royalblue;
     }
 
     .squids-description {
-      text-align: justify;
+      text-align: left;
       font-family: $font-description-family;
-      font-size: $font-regular-size;
+      font-size: 22px;
 
       padding: 1em;
     }
 
     ul {
       li {
-        font-size: medium;
+        font-size: 18px;
       }
     }
 
     .moreInfo {
       text-align: center;
       font-family: $font-description-family;
-      font-size: x-large;
+      font-size: 22px;
 
       a {
         text-decoration: none;
@@ -287,10 +262,8 @@ nav {
   #iframe-map-contact {
     text-align: center;
 
-    padding: 1em;
-
     iframe {
-      border: 0.5em;
+      border: 0.25em;
       border-style: solid;
       border-color: royalblue;
     }
@@ -309,7 +282,7 @@ nav {
   #social {
     select {
       border: 7.5%;
-      -webkit-appearance: none;
+      appearance: none;
 
       width: 3.5em;
       padding-left: 0.7em;

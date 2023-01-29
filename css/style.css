@@ -54,8 +54,8 @@ nav div div .dropdown-item {
 }
 .container #bio-intro .bio-intro-txt {
   font-family: "Sen", sans-serif;
-  font-size: 28px;
-  text-align: justify;
+  font-size: 24px;
+  text-align: left;
   padding: 1em;
   border-left: 2px solid black;
   -webkit-transition: color 0.5s ease;
@@ -89,17 +89,17 @@ nav div div .dropdown-item {
 }
 .container #bio-intro .profile-pic-info {
   font-family: "Sen", sans-serif;
-  font-size: 36px;
+  font-size: 32px;
 }
 .container #bio-txt {
   font-family: "Sen", sans-serif;
-  text-align: justify;
+  text-align: left;
 }
 .container #bio-txt a {
   text-decoration: none;
 }
 .container #bio-txt .bio-txt-top {
-  font-size: 28px;
+  font-size: 24px;
   padding: 1em;
   border-left: 4px solid black;
   -webkit-transition: color 0.5s ease;
@@ -133,13 +133,13 @@ nav div div .dropdown-item {
   padding: 0.5em;
   text-align: center;
   font-family: "Staatliches", cursive;
-  font-size: xx-large;
+  font-size: 38px;
 }
 .container h2 {
   font-family: "Sen", sans-serif;
 }
 .container .progress {
-  font-size: 16;
+  font-size: 14;
 }
 .container #btn-collapse {
   font-family: "Staatliches", cursive;
@@ -147,11 +147,10 @@ nav div div .dropdown-item {
   padding: 2.5em;
 }
 .container #iframe-project-c-1 {
-  padding: 1em;
   text-align: center;
 }
 .container #iframe-project-c-1 iframe {
-  border: 0.5em;
+  border: 0.25em;
   border-style: solid;
   border-color: royalblue;
 }
@@ -170,40 +169,24 @@ nav div div .dropdown-item {
 .container #iframe-project-c-1 h5 a {
   text-decoration: none;
 }
-.container #squids-project #carauselSquids {
-  margin: auto;
-}
-.container #squids-project #carauselSquids div button {
-  background-color: black;
-}
-.container #squids-project #carauselSquids div div div {
-  background-color: white;
-  color: black;
-}
-.container #squids-project #carauselSquids div div div h5 {
-  letter-spacing: 1px;
-  font-family: "Staatliches", cursive;
-  font-size: 42px;
-}
-.container #squids-project #carauselSquids div div div p {
-  text-align: center;
-  letter-spacing: 1px;
-  font-family: "Staatliches", cursive;
-  font-size: large;
+.container #squids-project iframe {
+  border: 0.25em;
+  border-style: solid;
+  border-color: royalblue;
 }
 .container #squids-project .squids-description {
-  text-align: justify;
+  text-align: left;
   font-family: "Sen", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   padding: 1em;
 }
 .container #squids-project ul li {
-  font-size: medium;
+  font-size: 18px;
 }
 .container #squids-project .moreInfo {
   text-align: center;
   font-family: "Sen", sans-serif;
-  font-size: x-large;
+  font-size: 22px;
 }
 .container #squids-project .moreInfo a {
   text-decoration: none;
@@ -222,10 +205,9 @@ nav div div .dropdown-item {
 }
 .container #iframe-map-contact {
   text-align: center;
-  padding: 1em;
 }
 .container #iframe-map-contact iframe {
-  border: 0.5em;
+  border: 0.25em;
   border-style: solid;
   border-color: royalblue;
 }
@@ -246,6 +228,8 @@ nav div div .dropdown-item {
 #footer #social select {
   border: 7.5%;
   -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   width: 3.5em;
   padding-left: 0.7em;
 }
