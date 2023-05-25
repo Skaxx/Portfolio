@@ -129,6 +129,12 @@ nav {
       border-left: 4px solid black;
 
       transition: color 0.5s ease;
+
+      text-align: justify;
+
+      b {
+        color: #ffc107;
+      }
     }
 
     .bio-txt-top:hover {
@@ -176,7 +182,6 @@ nav {
   }
 
   #iframe-project-c-1 {
-
     text-align: center;
 
     iframe {
@@ -189,6 +194,8 @@ nav {
       font-family: $font-description-family;
       font-size: $font-regular-size;
 
+      text-align: justify;
+
       padding: 1em;
 
       a {
@@ -199,39 +206,6 @@ nav {
     h5 {
       font-family: $font-description-family;
       font-size: x-large;
-
-      a {
-        text-decoration: none;
-      }
-    }
-  }
-
-  #squids-project {
-
-    iframe {
-      border: 0.25em;
-      border-style: solid;
-      border-color: royalblue;
-    }
-
-    .squids-description {
-      text-align: left;
-      font-family: $font-description-family;
-      font-size: 22px;
-
-      padding: 1em;
-    }
-
-    ul {
-      li {
-        font-size: 18px;
-      }
-    }
-
-    .moreInfo {
-      text-align: center;
-      font-family: $font-description-family;
-      font-size: 22px;
 
       a {
         text-decoration: none;
@@ -279,19 +253,15 @@ nav {
   font-family: $font-description-family;
   font-size: medium;
 
-  #social {
-    select {
-      border: 7.5%;
-      appearance: none;
+  #selectFooter {
+    border-radius: 10%;
 
-      width: 3.5em;
-      padding-left: 0.7em;
-    }
+    margin-bottom: 0.25em;
   }
 
   span {
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     padding: 0.2em;
 
     a {

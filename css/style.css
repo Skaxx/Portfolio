@@ -104,6 +104,10 @@ nav div div .dropdown-item {
   border-left: 4px solid black;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
+  text-align: justify;
+}
+.container #bio-txt .bio-txt-top b {
+  color: #ffc107;
 }
 .container #bio-txt .bio-txt-top:hover {
   color: royalblue;
@@ -157,6 +161,7 @@ nav div div .dropdown-item {
 .container #iframe-project-c-1 p {
   font-family: "Sen", sans-serif;
   font-size: 20px;
+  text-align: justify;
   padding: 1em;
 }
 .container #iframe-project-c-1 p a {
@@ -167,28 +172,6 @@ nav div div .dropdown-item {
   font-size: x-large;
 }
 .container #iframe-project-c-1 h5 a {
-  text-decoration: none;
-}
-.container #squids-project iframe {
-  border: 0.25em;
-  border-style: solid;
-  border-color: royalblue;
-}
-.container #squids-project .squids-description {
-  text-align: left;
-  font-family: "Sen", sans-serif;
-  font-size: 22px;
-  padding: 1em;
-}
-.container #squids-project ul li {
-  font-size: 18px;
-}
-.container #squids-project .moreInfo {
-  text-align: center;
-  font-family: "Sen", sans-serif;
-  font-size: 22px;
-}
-.container #squids-project .moreInfo a {
   text-decoration: none;
 }
 .container #TSL-project p {
@@ -225,17 +208,13 @@ nav div div .dropdown-item {
   font-family: "Sen", sans-serif;
   font-size: medium;
 }
-#footer #social select {
-  border: 7.5%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  width: 3.5em;
-  padding-left: 0.7em;
+#footer #selectFooter {
+  border-radius: 10%;
+  margin-bottom: 0.25em;
 }
 #footer span {
   text-align: center;
-  letter-spacing: 1px;
+  letter-spacing: 0.5px;
   padding: 0.2em;
 }
 #footer span a {
