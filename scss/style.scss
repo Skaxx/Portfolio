@@ -11,7 +11,30 @@ body {
 }
 
 nav {
-  background-color: $menu-bg-color;
+  background: linear-gradient(
+    22.5deg,
+    #0077cc,
+    royalblue,
+    #0066cc,
+    #0055cc,
+    #0066cc,
+    royalblue,
+    #0077cc
+  );
+  background-size: 400% 400%;
+  animation: gradientDistorse 20s ease infinite;
+
+  @keyframes gradientDistorse {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
   div {
     #author {
@@ -85,11 +108,21 @@ nav {
     }
 
     #modal-btn-lng {
-      font-family: $font-description-family;
+      font-size: large;
     }
 
     #modal-lng {
       font-family: $font-description-family;
+
+      h5 {
+        color: royalblue;
+        margin-bottom: -1em;
+      }
+
+      .modal-content {
+        background: $bg-color;
+        margin-top: 10%;
+      }
     }
 
     #profile-pic {
@@ -247,11 +280,52 @@ nav {
 #footer {
   display: flex;
   flex-direction: row;
-  background-color: $ft-color;
+  background: linear-gradient(
+    22.5deg,
+    #0077cc,
+    royalblue,
+    #0066cc,
+    #0055cc,
+    #0066cc,
+    royalblue,
+    #0077cc
+  );
+  background-size: 400% 400%;
+  animation: gradientDistorse 20s ease infinite;
+
+  @keyframes gradientDistorse {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
   color: white;
 
   font-family: $font-description-family;
-  font-size: medium;
+  font-size: large;
+
+  select {
+    background: $bg-color;
+    color: royalblue;
+    border: 2px solid #999;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  select option {
+    background-color: $bg-color;
+    color: royalblue;
+    font-size: 16px;
+  }
 
   #selectFooter {
     border-radius: 10%;

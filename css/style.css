@@ -7,7 +7,32 @@ body {
 }
 
 nav {
-  background-color: royalblue;
+  background: linear-gradient(22.5deg, #0077cc, royalblue, #0066cc, #0055cc, #0066cc, royalblue, #0077cc);
+  background-size: 400% 400%;
+  -webkit-animation: gradientDistorse 20s ease infinite;
+          animation: gradientDistorse 20s ease infinite;
+}
+@-webkit-keyframes gradientDistorse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes gradientDistorse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 nav div #author {
   font-family: "Rock Salt", cursive;
@@ -65,10 +90,18 @@ nav div div .dropdown-item {
   color: royalblue;
 }
 .container #bio-intro #modal-btn-lng {
-  font-family: "Sen", sans-serif;
+  font-size: large;
 }
 .container #bio-intro #modal-lng {
   font-family: "Sen", sans-serif;
+}
+.container #bio-intro #modal-lng h5 {
+  color: royalblue;
+  margin-bottom: -1em;
+}
+.container #bio-intro #modal-lng .modal-content {
+  background: url(../img/white-waves.png);
+  margin-top: 10%;
 }
 .container #bio-intro #profile-pic {
   -webkit-animation-name: floating;
@@ -203,10 +236,39 @@ nav div div .dropdown-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: royalblue;
+  background: linear-gradient(22.5deg, #0077cc, royalblue, #0066cc, #0055cc, #0066cc, royalblue, #0077cc);
+  background-size: 400% 400%;
+  -webkit-animation: gradientDistorse 20s ease infinite;
+          animation: gradientDistorse 20s ease infinite;
   color: white;
   font-family: "Sen", sans-serif;
-  font-size: medium;
+  font-size: large;
+}
+@keyframes gradientDistorse {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+#footer select {
+  background: url(../img/white-waves.png);
+  color: royalblue;
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+#footer select option {
+  background-color: url(../img/white-waves.png);
+  color: royalblue;
+  font-size: 16px;
 }
 #footer #selectFooter {
   border-radius: 10%;
