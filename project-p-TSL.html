@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="PL">
 
 <head>
@@ -59,6 +60,7 @@
     <!-- JS -->
 
     <script defer src="js/master.js"></script>
+    <script defer src="/assets/TSL - app/js/app.js"></script>
 
 </head>
 
@@ -84,7 +86,6 @@
                         <a class="nav-link dropdown-toggle link-warning" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">Projekty własne</a>
                         <ul class="dropdown-menu dropdown-menu text-center">
-                            <li><a class="dropdown-item" href="project-p-squids.html">Squids™</a></li>
                             <li><a class="dropdown-item" href="project-p-TSL.html">Kalkulator ładunkowy</a></li>
                         </ul>
                     </li>
@@ -106,62 +107,251 @@
     <div class="container">
 
         <h1 class="greetings-txt">
-            <span class="greetings-txt-animation">T</span>
-            <span class="greetings-txt-animation">S</span>
+            <span class="greetings-txt-animation">K</span>
+            <span class="greetings-txt-animation">A</span>
             <span class="greetings-txt-animation">L</span>
+            <span class="greetings-txt-animation">K</span>
+            <span class="greetings-txt-animation">U</span>
+            <span class="greetings-txt-animation">L</span>
+            <span class="greetings-txt-animation">A</span>
+            <span class="greetings-txt-animation">T</span>
+            <span class="greetings-txt-animation">O</span>
+            <span class="greetings-txt-animation">R</span>
+            <br>
+            <span class="greetings-txt-animation">Ł</span>
+            <span class="greetings-txt-animation">A</span>
+            <span class="greetings-txt-animation">D</span>
+            <span class="greetings-txt-animation">U</span>
+            <span class="greetings-txt-animation">N</span>
+            <span class="greetings-txt-animation">K</span>
+            <span class="greetings-txt-animation">Ó</span>
+            <span class="greetings-txt-animation">W</span>
         </h1>
 
         <div id="TSL-project">
+            <div class="content">
 
-            <p style="text-align: center; margin-top: 10em;">
-                STRONA W PRZYGOTOWANIU
-            </p>
+                <div>
+                    <p id="descTxt">
+                        Kalkulator transportowo-ładunkowy to aplikacja internetowa, której głównym celem jest obliczanie
+                        łącznych
+                        wymiarów i masy całkowitej pojazdów ponadnormatywnych wraz z ich ładunkami. Ponadto, aplikacja
+                        ma posiadać możliwość podpowiedzi jakiego typu zezwolenia transportowego kierowca by
+                        potrzebował, oraz jakiej kategorii - co pozwali na legalną jazdę takiego pojazdu wraz z
+                        ładunkiem. <br> <br>
 
+                        Ten projekt narodził się z mojej osobistej inicjatywy i potrzeby stworzenia narzędzia, które
+                        mogłoby ułatwić pracę w branży transportowej. <br>
+                        Aplikacja będzie powoli rozwijana, a w planach są dodatkowe funkcje takie jak:<br>
+                        - Wybór opuszczenia osi, co zwiększa maksymalny udźwig <br>
+                        - Możliwość uwzględniania naczep obniżanych oraz rozciąganych wraz z wyborem konkretnego wymiaru
+                        <br>
+                        - Dokładanie modułów <br> <br>
+
+                        Z uwagi na złożoność projektu na dzień dzisiejszy użytkownik może skorzystać tylko z
+                        podstawowych
+                        opcji aplikacji takich jak: <br>
+                        - Wybór 2 ciągników oraz 2 naczep z rzeczywistymi wymiarami oraz masą <br>
+                        - Wpisać dowolne wymiary ładunku <br>
+                        - Przeliczyć całość, uwzględniając podstawowe zmienne takie jak całkowita wysokość, szerokość
+                        oraz długość, jak i waga całkowita <br> <br>
+
+                        Program bierze pod uwagę wymiary oraz wagę rzeczywistą i uwzględnia to w obliczeniach pokazując
+                        nie przekłamany wynik. <br> <br>
+
+                        Całość została napisana w framework'u
+                        <b class="link-warning">{</b>
+                        Bootstrap
+                        <b class="link-warning">}</b>
+                        z użyciem czystego
+                        <b class="link-warning">{</b>
+                        JavaScript
+                        <b class="link-warning">}</b> oraz
+                        <b class="link-warning">{</b>
+                        SCSS
+                        <b class="link-warning">}</b>
+                        i bazuję na pracy zmiennych które są odpowiednio wyświetlane. <br> <br>
+
+                        Poniżej można osobiście przetestować działanie aplikacji.
+                    </p>
+                </div>
+
+                <div id="selectField" class="row col-12">
+
+                    <div class="col-6">
+                        <h3>WYBIERZ ZESTAW</h3>
+
+                        <select id="trucks" name="trucks" class="select">
+                            <option id="none" value="none" selected>NIE WYBRANO</option>
+                            <option id="scania1" value="ScaniaR450_4x4">Scania R450 4x4</option>
+                            <option id="scania2" value="ScaniaS770_8x4">Scania S770 8x4</option>
+                        </select>
+                    </div>
+
+                    <div class="col-6">
+                        <h3>WYBIERZ NACZEPĘ</h3>
+
+                        <select id="trailers" name="trailers" class="select">
+                            <option id="none" value="none" selected>NIE WYBRANO</option>
+                            <option id="nooteboom" value="NooteboomEuro_2">Nooteboom Euro 2</option>
+                            <option id="nooteboom" value="Goldhofer SPZ-GL">Goldhofer SPZ-GL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="dimensions" class="column">
+                    <div id="truckValue">
+                        <h4>WYMIARY CIĘŻARÓWKI</h4>
+
+                        <div>
+                            <p class="txt">WYSOKOŚĆ</p>
+                            <p id="truckHeight" class="valueDimensions">...</p>
+                        </div>
+
+                        <div>
+                            <p class="txt">SZEROKOŚĆ</p>
+                            <p id="truckWidth" class="valueDimensions">...</p>
+                        </div>
+
+                        <div>
+                            <p class="txt">DŁUGOŚĆ</p>
+                            <p id="truckLong" class="valueDimensions">...</p>
+                        </div>
+
+                        <div>
+                            <p class="txt">WAGA</p>
+                            <p id="truckWeight" class="valueDimensions">...</p>
+                        </div>
+                    </div>
+
+                    <div id="trailerValue">
+                        <h4>WYMIARY NACZEPY</h4>
+
+                        <div>
+                            <p class="txt">WYSOKOŚĆ</p>
+                            <p id="trailerHeight" class="valueDimensions">...</p>
+
+                            <div>
+                                <p class="txt">SZEROKOŚĆ</p>
+                                <p id="trailerWidth" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">DŁUGOŚĆ</p>
+                                <p id="trailerLong" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">WAGA</p>
+                                <p id="trailerWeight" class="valueDimensions">...</p>
+                            </div>
+                        </div>
+
+                        <div id="cargoValue">
+                            <h4>WYMIARY ŁADUNKU</h4>
+                            <p>Wartości proszę podać w CM, a wagę w KG.</p>
+
+                            <div>
+                                <p class="txtCargo">WYSOKOŚĆ</p>
+                                <input type="text" id="cargoHeight">
+                            </div>
+
+                            <div>
+                                <p class="txtCargo">SZEROKOŚĆ</p>
+                                <input type="text" id="cargoWidth">
+                            </div>
+
+                            <div>
+                                <p class="txtCargo">DŁUGOŚĆ</p>
+                                <input type="text" id="cargoLength">
+                            </div>
+
+                            <div>
+                                <p class="txtCargo">WAGA</p>
+                                <input type="text" id="cargoWeight">
+                            </div>
+                        </div>
+
+                        <button id="btnAdding" class="btn btn-warning" onclick="showDimensions()">Dodaj
+                            wybrane</button>
+
+                        <br>
+
+                        <button id="btnReset" class="btn btn-danger" onclick="resetDimensions()">Zresetuj
+                            wartości</button>
+
+                        <div id="totalValue">
+                            <h4>ŁĄCZNE WYMIARY</h4>
+
+                            <div>
+                                <p class="txt">WYSOKOŚĆ</p>
+                                <p id="totalHeight" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">SZEROKOŚĆ</p>
+                                <p id="totalWidth" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">DŁUGOŚĆ</p>
+                                <p id="totalLong" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">WAGA</p>
+                                <p id="totalWeight" class="valueDimensions">...</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-    </div>
-
-    <div class="offcanvas offcanvas-start" style="background-image: url(img/white-waves.png);" tabindex="-1"
-        id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-        <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-            <div>
-                <h2 class="text-center">CV</h2>
-                <a href="documents/CV PL - Patryk Pietrzyk.pdf" target="_blank">
-                    <img class="shadow" src="img/cv.png" alt="zdjęcie cv" width="100%">
-                </a>
-                <hr>
-                <h2 class="text-center">CERTYFIKATY</h2>
-                <br>
-                <div class="column">
-
-                    <h4 class="text-center p-2">2022</h4>
-
-                    <a href="documents/certyfikat-1.pdf" target="_blank">
-                        <img class="shadow pb-2" src="img/certyfikat-html-css-rwd.jpeg" alt="certyfikat - css/html/rwd"
-                            width="100%">
+        <div class="offcanvas offcanvas-start" style="background-image: url(img/white-waves.png);" tabindex="-1"
+            id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                    aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div>
+                    <h2 class="text-center">CV</h2>
+                    <a href="documents/CV PL - Patryk Pietrzyk.pdf" target="_blank">
+                        <img class="shadow" src="img/cv.png" alt="zdjęcie cv" width="100%">
                     </a>
+                    <hr>
+                    <h2 class="text-center">CERTYFIKATY</h2>
+                    <br>
+                    <div class="column">
 
-                    <a href="documents/certyfikat-2.pdf" target="_blank">
-                        <img class="shadow" src="img/certyfikat-sass-js-bootstrap.jpeg"
-                            alt="certyfikat - sass/js/bootstrap" width="100%">
-                    </a>
+                        <h4 class="text-center p-2">2022</h4>
 
-                    <h4 class="text-center pt-4">2020</h4>
-                    <a href="documents/Certyfikat-HTML-CSS3.pdf" target="_blank">
-                        <img class="shadow" src="img/certyfikat-html-css-js.jpeg" alt="certyfikat - html/css/js"
-                            width="100%">
-                    </a>
+                        <a href="documents/certyfikat-1.pdf" target="_blank">
+                            <img class="shadow pb-2" src="img/certyfikat-html-css-rwd.jpeg"
+                                alt="certyfikat - css/html/rwd" width="100%">
+                        </a>
+
+                        <a href="documents/certyfikat-2.pdf" target="_blank">
+                            <img class="shadow" src="img/certyfikat-sass-js-bootstrap.jpeg"
+                                alt="certyfikat - sass/js/bootstrap" width="100%">
+                        </a>
+
+                        <h4 class="text-center pt-4">2020</h4>
+                        <a href="documents/Certyfikat-HTML-CSS3.pdf" target="_blank">
+                            <img class="shadow" src="img/certyfikat-html-css-js.jpeg" alt="certyfikat - html/css/js"
+                                width="100%">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
     <div id="footer" class="col-12">
-        <span id="social" class="col-4 mt-1">
+        <span class="col-4 mt-1">
             <a href="https://www.linkedin.com/in/patrykpietrzyk/" target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" width="36" fill="currentColor" class="bi bi-linkedin m-2"
                     viewBox="0 0 16 16">
@@ -178,11 +368,10 @@
             </a>
         </span>
         <span class="col-4 mt-1">
-            Created by: Patryk Pietrzyk <br> 2023
+            Autor projektu - Patryk Pietrzyk <br> 2023
         </span>
         <span class="col-4 mt-1">
             <div class="day"></div>
-
             <span id="time">
                 <span class="hours"></span> :
                 <span class="minutes"></span>
@@ -203,6 +392,5 @@
         </span>
     </div>
 </body>
-
 
 </html>
