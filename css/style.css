@@ -7,10 +7,10 @@ body {
 }
 
 nav {
-  background: linear-gradient(22.5deg, #0077cc, royalblue, #0066cc, #0055cc, #0066cc, royalblue, #0077cc);
+  background: linear-gradient(120deg, #0077cc, royalblue, #0066cc, #0055cc, #0044cc, #0044cc, #0055cc, #0066cc, royalblue, #0077cc);
   background-size: 400% 400%;
-  -webkit-animation: gradientDistorse 20s ease infinite;
-          animation: gradientDistorse 20s ease infinite;
+  -webkit-animation: gradientDistorse 15s ease infinite;
+          animation: gradientDistorse 15s ease infinite;
 }
 @-webkit-keyframes gradientDistorse {
   0% {
@@ -47,9 +47,6 @@ nav div div ul li {
   font-size: 22px;
   padding: 0.1em;
 }
-nav div div .dropdown-item {
-  letter-spacing: 1px;
-}
 
 #side-menu {
   font-family: "Sen", sans-serif;
@@ -79,18 +76,21 @@ nav div div .dropdown-item {
 }
 .container #bio-intro .bio-intro-txt {
   font-family: "Sen", sans-serif;
-  font-size: 24px;
-  text-align: left;
+  font-size: larger;
+  text-align: justify;
   padding: 1em;
   border-left: 2px solid black;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
+.container #bio-intro .bio-intro-txt .link {
+  text-decoration: none;
+}
 .container #bio-intro .bio-intro-txt:hover {
   color: royalblue;
 }
 .container #bio-intro #modal-btn-lng {
-  font-size: large;
+  font-size: larger;
 }
 .container #bio-intro #modal-lng {
   font-family: "Sen", sans-serif;
@@ -122,7 +122,7 @@ nav div div .dropdown-item {
 }
 .container #bio-intro .profile-pic-info {
   font-family: "Sen", sans-serif;
-  font-size: 32px;
+  font-size: xx-large;
 }
 .container #bio-txt {
   font-family: "Sen", sans-serif;
@@ -132,21 +132,15 @@ nav div div .dropdown-item {
   text-decoration: none;
 }
 .container #bio-txt .bio-txt-top {
-  font-size: 24px;
+  font-size: larger;
+  text-align: justify;
   padding: 1em;
   border-left: 4px solid black;
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
-  text-align: justify;
-}
-.container #bio-txt .bio-txt-top b {
-  color: #ffc107;
 }
 .container #bio-txt .bio-txt-top:hover {
   color: royalblue;
-}
-.container #bio-txt .bio-txt-middle {
-  font-size: 20px;
 }
 .container #bio-txt #cards {
   display: -webkit-box;
@@ -161,6 +155,7 @@ nav div div .dropdown-item {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-size: larger;
 }
 .container #bio-txt #cards .card {
   margin: 1em;
@@ -173,42 +168,140 @@ nav div div .dropdown-item {
   font-size: 38px;
 }
 .container h2 {
-  font-family: "Sen", sans-serif;
+  font-family: "Staatliches", cursive;
 }
 .container .progress {
-  font-size: 14;
+  font-size: large;
 }
 .container #btn-collapse {
   font-family: "Staatliches", cursive;
   text-align: center;
   padding: 2.5em;
 }
-.container #iframe-project-c-1 {
+.container #project-c-1 h1 {
+  margin-top: 10%;
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.container #project-c-1 h1 a {
+  text-decoration: none;
+}
+.container #project-c-1 h2 {
+  margin-top: 2rem;
+  padding: 0.5rem;
+  font-family: "Staatliches", cursive;
+  text-align: left;
+  letter-spacing: 1px;
+}
+.container #project-c-1 p {
+  padding: 1rem;
+  border-left: 2px solid black;
+  font-family: "Sen", sans-serif;
+  font-size: larger;
+  text-align: justify;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+.container #project-c-1 p:hover {
+  color: royalblue;
+}
+.container #project-c-1 #iframe {
   text-align: center;
 }
-.container #iframe-project-c-1 iframe {
-  border: 0.25em;
+.container #project-c-1 #iframe iframe {
+  border: 2.5px;
   border-style: solid;
   border-color: royalblue;
 }
-.container #iframe-project-c-1 p {
+.container #project-c-1 .carousel-control-prev {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+.container #project-c-1 .carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.125);
+}
+.container #TSL-project {
   font-family: "Sen", sans-serif;
-  font-size: 20px;
+  font-size: large;
+}
+.container #TSL-project .content h1 {
+  color: #e4a11b;
+  padding: 1rem;
+}
+.container #TSL-project .content div #descTxt {
+  font-family: "Sen", sans-serif;
+  font-size: larger;
   text-align: justify;
-  padding: 1em;
+  padding: 1rem;
+  margin-bottom: 5rem;
+  border-left: 2px solid black;
+  -webkit-transition: color 0.5s ease;
+  transition: color 0.5s ease;
 }
-.container #iframe-project-c-1 p a {
-  text-decoration: none;
+.container #TSL-project .content div #descTxt:hover {
+  color: royalblue;
 }
-.container #iframe-project-c-1 h5 {
-  font-family: "Sen", sans-serif;
-  font-size: x-large;
+.container #TSL-project .content #selectField {
+  text-align: center;
+  margin: auto;
 }
-.container #iframe-project-c-1 h5 a {
-  text-decoration: none;
+.container #TSL-project .content #selectField select {
+  color: #e4a11b;
+  border: 2px solid #999;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
 }
-.container #TSL-project p {
-  font-family: black;
+.container #TSL-project .content #selectField select option {
+  background-color: #999;
+  color: royalblue;
+  font-size: 16px;
+}
+.container #TSL-project .content #dimensions {
+  margin: auto;
+  text-align: center;
+}
+.container #TSL-project .content #dimensions h4 {
+  margin-top: 2.5rem;
+  color: orange;
+}
+.container #TSL-project .content #dimensions .txt {
+  padding: 0.25rem;
+}
+.container #TSL-project .content #dimensions #cargoValue div .txtCargo {
+  margin-bottom: -0.05rem;
+}
+.container #TSL-project .content #dimensions #cargoValue div input {
+  border: 2px;
+  border-style: solid;
+  border-color: #e4a11b;
+}
+.container #TSL-project .content #dimensions .valueDimensions {
+  margin: auto;
+  margin-top: -1.125rem;
+  color: black;
+  width: 50%;
+  border: 2px;
+  border-style: solid;
+  border-color: #e4a11b;
+}
+.container #TSL-project .content #dimensions input {
+  text-align: center;
+  width: 50%;
+}
+.container #TSL-project .content #btnAdding {
+  width: 25%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.5rem;
+}
+.container #TSL-project .content #btnReset {
+  width: 25%;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0.5rem;
 }
 .container #contact-info {
   font-family: "Sen", sans-serif;
@@ -236,10 +329,10 @@ nav div div .dropdown-item {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background: linear-gradient(22.5deg, #0077cc, royalblue, #0066cc, #0055cc, #0066cc, royalblue, #0077cc);
+  background: linear-gradient(120deg, #0077cc, royalblue, #0066cc, #0055cc, #0044cc, #0044cc, #0055cc, #0066cc, royalblue, #0077cc);
   background-size: 400% 400%;
-  -webkit-animation: gradientDistorse 20s ease infinite;
-          animation: gradientDistorse 20s ease infinite;
+  -webkit-animation: gradientDistorse 15s ease infinite;
+          animation: gradientDistorse 15s ease infinite;
   color: white;
   font-family: "Sen", sans-serif;
   font-size: large;

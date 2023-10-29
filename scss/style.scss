@@ -12,17 +12,20 @@ body {
 
 nav {
   background: linear-gradient(
-    22.5deg,
+    120deg,
     #0077cc,
     royalblue,
     #0066cc,
+    #0055cc,
+    #0044cc,
+    #0044cc,
     #0055cc,
     #0066cc,
     royalblue,
     #0077cc
   );
   background-size: 400% 400%;
-  animation: gradientDistorse 20s ease infinite;
+  animation: gradientDistorse 15s ease infinite;
 
   @keyframes gradientDistorse {
     0% {
@@ -54,10 +57,6 @@ nav {
 
           padding: 0.1em;
         }
-      }
-
-      .dropdown-item {
-        letter-spacing: 1px;
       }
     }
   }
@@ -95,12 +94,16 @@ nav {
 
     .bio-intro-txt {
       font-family: $font-description-family;
-      font-size: 24px;
-      text-align: left;
+      font-size: larger;
+      text-align: justify;
 
       padding: 1em;
       border-left: 2px solid black;
       transition: color 0.5s ease;
+
+      .link {
+        text-decoration: none;
+      }
     }
 
     .bio-intro-txt:hover {
@@ -108,7 +111,7 @@ nav {
     }
 
     #modal-btn-lng {
-      font-size: large;
+      font-size: larger;
     }
 
     #modal-lng {
@@ -143,7 +146,7 @@ nav {
 
     .profile-pic-info {
       font-family: $font-description-family;
-      font-size: 32px;
+      font-size: xx-large;
     }
   }
 
@@ -156,26 +159,17 @@ nav {
     }
 
     .bio-txt-top {
-      font-size: 24px;
+      font-size: larger;
+      text-align: justify;
 
       padding: 1em;
       border-left: 4px solid black;
 
       transition: color 0.5s ease;
-
-      text-align: justify;
-
-      b {
-        color: #ffc107;
-      }
     }
 
     .bio-txt-top:hover {
       color: $font-hover-color;
-    }
-
-    .bio-txt-middle {
-      font-size: $font-regular-size;
     }
 
     #cards {
@@ -183,6 +177,8 @@ nav {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
+
+      font-size: larger;
 
       .card {
         margin: 1em;
@@ -200,11 +196,11 @@ nav {
   }
 
   h2 {
-    font-family: $font-description-family;
+    font-family: $font-regular-family;
   }
 
   .progress {
-    font-size: 14;
+    font-size: large;
   }
 
   #btn-collapse {
@@ -214,41 +210,168 @@ nav {
     padding: 2.5em;
   }
 
-  #iframe-project-c-1 {
-    text-align: center;
+  #project-c-1 {
+    h1 {
+      margin-top: 10%;
+      font-family: $font-regular-family;
 
-    iframe {
-      border: 0.25em;
-      border-style: solid;
-      border-color: royalblue;
+      text-align: center;
+      letter-spacing: 1px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    h2 {
+      margin-top: 2rem;
+      padding: 0.5rem;
+      font-family: $font-regular-family;
+
+      text-align: left;
+      letter-spacing: 1px;
     }
 
     p {
-      font-family: $font-description-family;
-      font-size: $font-regular-size;
+      padding: 1rem;
+      border-left: 2px solid black;
 
+      font-family: $font-description-family;
+      font-size: larger;
       text-align: justify;
 
-      padding: 1em;
+      transition: color 0.5s ease;
+    }
 
-      a {
-        text-decoration: none;
+    p:hover {
+      color: $font-hover-color;
+    }
+
+    #iframe {
+      text-align: center;
+
+      iframe {
+        border: 2.5px;
+        border-style: solid;
+        border-color: royalblue;
       }
     }
 
-    h5 {
-      font-family: $font-description-family;
-      font-size: x-large;
+    .carousel-control-prev {
+      background-color: rgba(0, 0, 0, 0.125);
+    }
 
-      a {
-        text-decoration: none;
-      }
+    .carousel-control-next {
+      background-color: rgba(0, 0, 0, 0.125);
     }
   }
 
   #TSL-project {
-    p {
-      font-family: $font-regular-color;
+    font-family: $font-description-family;
+    font-size: large;
+
+    .content {
+      h1 {
+        color: #e4a11b;
+        padding: 1rem;
+      }
+
+      div {
+        #descTxt {
+          font-family: $font-description-family;
+          font-size: larger;
+          text-align: justify;
+
+          padding: 1rem;
+          margin-bottom: 5rem;
+          border-left: 2px solid black;
+
+          transition: color 0.5s ease;
+        }
+
+        #descTxt:hover {
+          color: $font-hover-color;
+        }
+      }
+
+      #selectField {
+        text-align: center;
+        margin: auto;
+
+        select {
+          color: #e4a11b;
+          border: 2px solid #999;
+          border-radius: 5px;
+          padding: 5px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+
+          option {
+            background-color: #999;
+            color: royalblue;
+            font-size: 16px;
+          }
+        }
+      }
+
+      #dimensions {
+        margin: auto;
+        text-align: center;
+
+        h4 {
+          margin-top: 2.5rem;
+          color: orange;
+        }
+
+        .txt {
+          padding: 0.25rem;
+        }
+
+        #cargoValue {
+          div {
+            .txtCargo {
+              margin-bottom: -0.05rem;
+            }
+
+            input {
+              border: 2px;
+              border-style: solid;
+              border-color: #e4a11b;
+            }
+          }
+        }
+
+        .valueDimensions {
+          margin: auto;
+          margin-top: -1.125rem;
+          color: black;
+          width: 50%;
+
+          border: 2px;
+          border-style: solid;
+          border-color: #e4a11b;
+        }
+
+        input {
+          text-align: center;
+          width: 50%;
+        }
+      }
+
+      #btnAdding {
+        width: 25%;
+        margin: auto;
+        margin-top: 2rem;
+        padding: 0.5rem;
+      }
+
+      #btnReset {
+        width: 25%;
+        margin: auto;
+        margin-top: 2rem;
+        padding: 0.5rem;
+      }
     }
   }
 
@@ -281,17 +404,20 @@ nav {
   display: flex;
   flex-direction: row;
   background: linear-gradient(
-    22.5deg,
+    120deg,
     #0077cc,
     royalblue,
     #0066cc,
+    #0055cc,
+    #0044cc,
+    #0044cc,
     #0055cc,
     #0066cc,
     royalblue,
     #0077cc
   );
   background-size: 400% 400%;
-  animation: gradientDistorse 20s ease infinite;
+  animation: gradientDistorse 15s ease infinite;
 
   @keyframes gradientDistorse {
     0% {
@@ -319,12 +445,12 @@ nav {
     text-align: center;
     font-size: 16px;
     font-weight: bold;
-  }
 
-  select option {
-    background-color: $bg-color;
-    color: royalblue;
-    font-size: 16px;
+    option {
+      background-color: $bg-color;
+      color: royalblue;
+      font-size: 16px;
+    }
   }
 
   #selectFooter {
