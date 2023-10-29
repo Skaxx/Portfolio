@@ -2,7 +2,7 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   max-width: auto;
-  background-image: url(../img/white-waves.png);
+  background: url(../img/white-lines.png);
   color: black;
 }
 
@@ -83,7 +83,7 @@ nav div div ul li {
   -webkit-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-.container #bio-intro .bio-intro-txt .link {
+.container #bio-intro .bio-intro-txt a {
   text-decoration: none;
 }
 .container #bio-intro .bio-intro-txt:hover {
@@ -100,7 +100,7 @@ nav div div ul li {
   margin-bottom: -1em;
 }
 .container #bio-intro #modal-lng .modal-content {
-  background: url(../img/white-waves.png);
+  background: url(../img/white-lines.png);
   margin-top: 10%;
 }
 .container #bio-intro #profile-pic {
@@ -179,7 +179,7 @@ nav div div ul li {
   padding: 2.5em;
 }
 .container #project-c-1 h1 {
-  margin-top: 10%;
+  margin-top: 20%;
   font-family: "Staatliches", cursive;
   text-align: center;
   letter-spacing: 1px;
@@ -222,7 +222,6 @@ nav div div ul li {
 }
 .container #TSL-project {
   font-family: "Sen", sans-serif;
-  font-size: large;
 }
 .container #TSL-project .content h1 {
   color: #e4a11b;
@@ -249,10 +248,10 @@ nav div div ul li {
   color: #e4a11b;
   border: 2px solid #999;
   border-radius: 5px;
-  padding: 5px;
   text-align: center;
   font-size: 16px;
   font-weight: bold;
+  width: 50%;
 }
 .container #TSL-project .content #selectField select option {
   background-color: #999;
@@ -282,23 +281,21 @@ nav div div ul li {
   margin: auto;
   margin-top: -1.125rem;
   color: black;
-  width: 50%;
+  width: 75%;
   border: 2px;
   border-style: solid;
   border-color: #e4a11b;
 }
 .container #TSL-project .content #dimensions input {
   text-align: center;
-  width: 50%;
+  width: 75%;
 }
 .container #TSL-project .content #btnAdding {
-  width: 25%;
   margin: auto;
   margin-top: 2rem;
   padding: 0.5rem;
 }
 .container #TSL-project .content #btnReset {
-  width: 25%;
   margin: auto;
   margin-top: 2rem;
   padding: 0.5rem;
@@ -348,8 +345,11 @@ nav div div ul li {
     background-position: 0% 50%;
   }
 }
+#footer span {
+  text-align: center;
+}
 #footer select {
-  background: url(../img/white-waves.png);
+  background: url(../img/white-lines.png);
   color: royalblue;
   border: 2px solid #999;
   border-radius: 5px;
@@ -359,7 +359,7 @@ nav div div ul li {
   font-weight: bold;
 }
 #footer select option {
-  background-color: url(../img/white-waves.png);
+  background: url(../img/white-lines.png);
   color: royalblue;
   font-size: 16px;
 }

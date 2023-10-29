@@ -55,12 +55,11 @@
 
     <!-- CSS -->
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 
     <!-- JS -->
 
-    <script defer src="js/master.js"></script>
-    <script defer src="/assets/TSL - app/js/app.js"></script>
+    <script defer src="../js/master.js"></script>
 
 </head>
 
@@ -183,8 +182,8 @@
 
                         <select id="trucks" name="trucks" class="select">
                             <option id="none" value="none" selected>NIE WYBRANO</option>
-                            <option id="scania1" value="ScaniaR450_4x4">Scania R450 4x4</option>
-                            <option id="scania2" value="ScaniaS770_8x4">Scania S770 8x4</option>
+                            <option id="scania1.1" value="ScaniaR450_4x4">Scania R450 4x4</option>
+                            <option id="scania1.2" value="ScaniaS770_8x4">Scania S770 8x4</option>
                         </select>
                     </div>
 
@@ -193,8 +192,8 @@
 
                         <select id="trailers" name="trailers" class="select">
                             <option id="none" value="none" selected>NIE WYBRANO</option>
-                            <option id="nooteboom" value="NooteboomEuro_2">Nooteboom Euro 2</option>
-                            <option id="nooteboom" value="Goldhofer SPZ-GL">Goldhofer SPZ-GL</option>
+                            <option id="nooteboom1.1" value="NooteboomEuro_2">Nooteboom Euro 2</option>
+                            <option id="goldhofer2.1" value="GoldhoferSPZ-GL">Goldhofer SPZ-GL</option>
                         </select>
                     </div>
                 </div>
@@ -309,7 +308,7 @@
             </div>
         </div>
 
-        <div class="offcanvas offcanvas-start" style="background-image: url(img/white-waves.png);" tabindex="-1"
+        <div class="offcanvas offcanvas-start" style="background-image: url(../img/white-lines.png);" tabindex="-1"
             id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
                 <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
@@ -368,7 +367,9 @@
             </a>
         </span>
         <span class="col-4 mt-1">
-            Autor projektu - Patryk Pietrzyk <br> 2023
+            Autor: <br>
+            Patryk Pietrzyk <br>
+            2023
         </span>
         <span class="col-4 mt-1">
             <div class="day"></div>
@@ -379,7 +380,7 @@
             <br>
             <select name="lngPick" id="lngPick" class="mt-1 mb-1" onchange="lngPick()">
                 <option value="Polish" class="PL" selected>PL</option>
-                <option value="English" class="ENG">ENG</option>
+                <!-- <option value="English" class="ENG">ENG</option> -->
             </select>
         </span>
     </div>
