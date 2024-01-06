@@ -1,0 +1,51 @@
+nav {
+    background: linear-gradient(
+      120deg,
+      #0077cc,
+      royalblue,
+      #0066cc,
+      #0055cc,
+      #0044cc,
+      #0044cc,
+      #0055cc,
+      #0066cc,
+      royalblue,
+      #0077cc
+    );
+    background-size: 400% 400%;
+    animation: gradientDistorse 15s ease infinite;
+  
+    @keyframes gradientDistorse {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  
+    div {
+      #author {
+        font-family: $font-author-family;
+        font-size: medium;
+  
+        color: white;
+      }
+  
+      div {
+        font-family: $font-description-family;
+  
+        ul {
+          li {
+            font-family: $font-description-family;
+            font-size: larger;
+  
+            padding: 0.1em;
+          }
+        }
+      }
+    }
+  }

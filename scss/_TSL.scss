@@ -1,0 +1,106 @@
+#TSL-project {
+    font-family: $font-description-family;
+
+    .content {
+      h1 {
+        color: #e4a11b;
+        padding: 1rem;
+      }
+
+      div {
+        #descTxt {
+          font-family: $font-description-family;
+          font-size: larger;
+          text-align: justify;
+
+          padding: 1rem;
+          margin-bottom: 5rem;
+          border-left: 2px solid black;
+
+          transition: color 0.5s ease;
+        }
+
+        #descTxt:hover {
+          color: $font-hover-color;
+        }
+      }
+
+      #selectField {
+        text-align: center;
+        margin: auto;
+
+        select {
+          color: #e4a11b;
+          border: 2px solid #999;
+          border-radius: 5px;
+          text-align: center;
+          font-size: 16px;
+          font-weight: bold;
+
+          width: 50%;
+
+          option {
+            background-color: #999;
+            color: royalblue;
+            font-size: large;
+          }
+        }
+      }
+
+      #dimensions {
+        margin: auto;
+        text-align: center;
+
+        h4 {
+          margin-top: 2.5rem;
+          color: orange;
+        }
+
+        .txt {
+          padding: 0.25rem;
+        }
+
+        #cargoValue {
+          div {
+            .txtCargo {
+              margin-bottom: -0.05rem;
+            }
+
+            input {
+              border: 2px;
+              border-style: solid;
+              border-color: #e4a11b;
+            }
+          }
+        }
+
+        .valueDimensions {
+          margin: auto;
+          margin-top: -1.125rem;
+          color: black;
+          width: 75%;
+
+          border: 2px;
+          border-style: solid;
+          border-color: #e4a11b;
+        }
+
+        input {
+          text-align: center;
+          width: 75%;
+        }
+      }
+
+      #btnAdding {
+        margin: auto;
+        margin-top: 2rem;
+        padding: 0.5rem;
+      }
+
+      #btnReset {
+        margin: auto;
+        margin-top: 2rem;
+        padding: 0.5rem;
+      }
+    }
+  }

@@ -1,0 +1,74 @@
+#footer {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    120deg,
+    #0077cc,
+    royalblue,
+    #0066cc,
+    #0055cc,
+    #0044cc,
+    #0044cc,
+    #0055cc,
+    #0066cc,
+    royalblue,
+    #0077cc
+  );
+  background-size: 400% 400%;
+  animation: gradientDistorse 15s ease infinite;
+
+  @keyframes gradientDistorse {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  color: white;
+
+  font-family: $font-description-family;
+  font-size: large;
+
+  span {
+    text-align: center;
+  }
+
+  select {
+    background: url(../img/white-lines.png);
+    color: royalblue;
+    border: 2px solid #999;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+
+    option {
+      background: url(../img/white-lines.png);
+      color: royalblue;
+      font-size: large;
+    }
+  }
+
+  #selectFooter {
+    border-radius: 10%;
+
+    margin-bottom: 0.25em;
+  }
+
+  span {
+    text-align: center;
+    letter-spacing: 0.5px;
+    padding: 0.2em;
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
