@@ -25,14 +25,12 @@
   text-align: center;
 }
 .container #bio-intro #profile-pic {
-  -webkit-animation-name: floating;
-          animation-name: floating;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
-          animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+  -webkit-animation: slideInFromBottom ease-out;
+          animation: slideInFromBottom ease-out;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.1, 0.25);
+          animation-timing-function: cubic-bezier(0.1, 0.25);
   border-radius: 5%;
   text-decoration: none;
 }
@@ -174,20 +172,135 @@
   border-style: solid;
   border-color: royalblue;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 320px) and (max-width: 499px) {
+  .container #bio-intro {
+    margin: 0.25rem;
+  }
   .container #bio-intro #profile-pic {
-    margin-top: 5rem;
-    margin-left: -1rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .container #arrow {
+    font-family: "Rock Salt", cursive;
+    position: relative;
+  }
+  .container #arrow .arrow-img {
+    margin-left: 0.25rem;
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    rotate: 65deg;
+    position: absolute;
+    top: -2rem;
+    right: 15rem;
+  }
+  .container #arrow .arrow-txt {
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
   }
 }
-@media screen and (max-width: 992.5px) {
-  .container #bio-intro {
-    margin-left: 1rem;
-  }
+@media screen and (min-width: 500px) and (max-width: 767px) {
   .container #bio-intro #profile-pic {
-    margin-bottom: 2.5rem;
-    margin-left: -1rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem;
   }
+  .container #arrow {
+    font-family: "Rock Salt", cursive;
+    position: relative;
+  }
+  .container #arrow .arrow-img {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    rotate: 65deg;
+    position: absolute;
+    top: -2rem;
+    right: 26rem;
+  }
+  .container #arrow .arrow-txt {
+    position: absolute;
+    top: -1rem;
+    right: 12rem;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container #bio-intro #profile-pic {
+    margin-top: 0rem;
+    margin-bottom: 1rem;
+  }
+  .container #arrow {
+    font-family: "Rock Salt", cursive;
+    position: relative;
+  }
+  .container #arrow .arrow-img {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    rotate: 65deg;
+    position: absolute;
+    top: -2rem;
+    right: 40rem;
+  }
+  .container #arrow .arrow-txt {
+    position: absolute;
+    top: -1rem;
+    right: 26rem;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .container #bio-intro #profile-pic {
+    margin-top: 125px;
+    margin-left: -60px;
+  }
+  .container #arrow {
+    font-family: "Rock Salt", cursive;
+    position: relative;
+  }
+  .container #arrow .arrow-img {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    rotate: 65deg;
+    position: absolute;
+    top: -2.25rem;
+    right: 35rem;
+  }
+  .container #arrow .arrow-txt {
+    position: absolute;
+    top: -1.25rem;
+    right: 21rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container #bio-intro #profile-pic {
+    margin-top: 125px;
+    margin-left: -60px;
+  }
+  .container #arrow {
+    font-family: "Rock Salt", cursive;
+    position: relative;
+  }
+  .container #arrow .arrow-img {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+    rotate: 65deg;
+    position: absolute;
+    top: -2.25rem;
+    right: 42.5rem;
+  }
+  .container #arrow .arrow-txt {
+    position: absolute;
+    top: -1.25rem;
+    right: 28.5rem;
+  }
+}
+
+.offcanvas-body h2 {
+  font-family: "Staatliches", cursive;
+  font-size: 32px;
+  letter-spacing: 1px;
+}
+.offcanvas-body H4 {
+  Font-family: "Staatliches", cursive;
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
 #TSL-project {
@@ -221,7 +334,7 @@
   text-align: center;
   font-size: 16px;
   font-weight: bold;
-  width: 50%;
+  width: 75%;
 }
 #TSL-project .content #selectField select option {
   background-color: #999;
@@ -415,6 +528,30 @@ nav div div ul li {
   }
   to {
     opacity: 1;
+  }
+}
+@-webkit-keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 .loader-wrapper {

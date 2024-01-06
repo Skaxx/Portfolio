@@ -28,10 +28,9 @@
     text-align: center;
 
     #profile-pic {
-      animation-name: floating;
-      animation-duration: 4s;
-      animation-iteration-count: infinite;
-      animation-timing-function: cubic-bezier(0.1, 0.7, 1, 0.1);
+      animation: slideInFromBottom ease-out;
+      animation-duration: 2s;
+      animation-timing-function: cubic-bezier(0.1, 0.25);
 
       border-radius: 5%;
 
@@ -211,23 +210,162 @@
     }
   }
 
-  @media screen and (min-width: 992px) {
+  @media screen and (min-width: 320px) and (max-width: 499px) {
     #bio-intro {
+      margin: 0.25rem;
+
       #profile-pic {
-        margin-top: 5rem;
-        margin-left: -1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    #arrow {
+      font-family: "Rock Salt", cursive;
+      position: relative;
+
+      .arrow-img {
+        margin-left: 0.25rem;
+
+        transform: scaleX(-1);
+        rotate: 65deg;
+
+        position: absolute;
+        top: -2rem;
+        right: 15rem;
+      }
+
+      .arrow-txt {
+        position: absolute;
+        top: -1rem;
+        right: 1rem;
       }
     }
   }
 
-  @media screen and (max-width: 992.5px) {
+  @media screen and (min-width: 500px) and (max-width: 767px) {
     #bio-intro {
-      margin-left: 1rem;
-
       #profile-pic {
-        margin-bottom: 2.5rem;
-        margin-left: -1rem;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
       }
     }
+
+    #arrow {
+      font-family: "Rock Salt", cursive;
+      position: relative;
+
+      .arrow-img {
+        transform: scaleX(-1);
+        rotate: 65deg;
+        position: absolute;
+        top: -2rem;
+        right: 26rem;
+      }
+
+      .arrow-txt {
+        position: absolute;
+
+        top: -1rem;
+        right: 12rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    #bio-intro {
+      #profile-pic {
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    #arrow {
+      font-family: "Rock Salt", cursive;
+      position: relative;
+
+      .arrow-img {
+        transform: scaleX(-1);
+        rotate: 65deg;
+        position: absolute;
+        top: -2rem;
+        right: 40rem;
+      }
+
+      .arrow-txt {
+        position: absolute;
+
+        top: -1rem;
+        right: 26rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    #bio-intro {
+      #profile-pic {
+        margin-top: 125px;
+        margin-left: -60px;
+      }
+    }
+    #arrow {
+      font-family: "Rock Salt", cursive;
+      position: relative;
+
+      .arrow-img {
+        transform: scaleX(-1);
+        rotate: 65deg;
+        position: absolute;
+        top: -2.25rem;
+        right: 35rem;
+      }
+
+      .arrow-txt {
+        position: absolute;
+        top: -1.25rem;
+        right: 21rem;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    #bio-intro {
+      #profile-pic {
+        margin-top: 125px;
+        margin-left: -60px;
+      }
+    }
+    #arrow {
+      font-family: "Rock Salt", cursive;
+      position: relative;
+
+      .arrow-img {
+        transform: scaleX(-1);
+        rotate: 65deg;
+        position: absolute;
+        top: -2.25rem;
+        right: 42.5rem;
+      }
+
+      .arrow-txt {
+        position: absolute;
+        top: -1.25rem;
+        right: 28.5rem;
+      }
+    }
+  }
+}
+
+.offcanvas-body {
+  h2 {
+    font-family: $font-regular-family;
+    font-size: 32px;
+    letter-spacing: 1px;
+  }
+
+  H4 {
+    Font-family: $font-regular-family;
+    font-size: 28px;
+    letter-spacing: 1px;
   }
 }
