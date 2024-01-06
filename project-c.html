@@ -103,12 +103,18 @@
 
         <div id="project-c-1">
 
-            <h1>
-                <b class="link-warning">{</b>
-                <a href="https://andytrans.pl" target="_blank" class="link link-dark">
-                    AndyTrans Sp. z o.o.
+            <h1 class="greetings-txt">
+                <a class="link link-dark" href="https://www.andytrans.pl" target="_blank">
+                    <span class="greetings-txt-animation">A</span>
+                    <span class="greetings-txt-animation">N</span>
+                    <span class="greetings-txt-animation">D</span>
+                    <span class="greetings-txt-animation">Y</span>
+                    <span class="greetings-txt-animation">T</span>
+                    <span class="greetings-txt-animation">R</span>
+                    <span class="greetings-txt-animation">A</span>
+                    <span class="greetings-txt-animation">N</span>
+                    <span class="greetings-txt-animation">S</span>
                 </a>
-                <b class="link-warning">}</b>
             </h1>
 
 
@@ -117,33 +123,26 @@
             </h2>
 
             <p>
-                Projekt strony internetowej dla firmy AndyTrans to moje pierwsze zlecenie, z którym miałem okazję się
-                zmierzyć. <br>
+                Projekt strony internetowej dla firmy AndyTrans Sp. z o.o. to moje pierwsze zlecenie, z którym miałem
+                okazję się zmierzyć. <br>
                 Całość została zrealizowana bez większych trudności, chociaż jako początkujący deweloper, początkowo
                 odczuwałem stres, obawiając się, czy sprostam konkretym wymaganiom klienta. <br> <br>
 
                 Strona stanowi wizytówkę firmy i ma na celu przedstawić potencjalnym klientom nasze kompetencje w
                 dziedzinie transportu ponadnormatywnego. <br>
-                Znajduję się tutaj również galeria zdjęć przedstawiająca realizacje zleceń. <br> <br>
+                Na stronie znajduję się również galeria zdjęć przedstawiająca realizacje zleceń. <br> <br>
 
                 W celu stworzenia tego projektu został użyty framework
-                <b class="link-warning">{</b>
-                Bootstrap
-                <b class="link-warning">}</b> ,
+                <b class="link-warning">{</b>Bootstrap<b class="link-warning">}</b> ,
                 a także
-                <b class="link-warning">{</b>
-                JavaScript
-                <b class="link-warning">}</b>,
+                <b class="link-warning">{</b>JavaScript<b class="link-warning">}</b>,
                 jak i
-                <b class="link-warning">{</b>
-                SCSS
-                <b class="link-warning">}</b>
+                <b class="link-warning">{</b>SCSS<b class="link-warning">}</b>
                 w celu wystylizowania całości. <br> <br>
 
-                Mimo że jestem zadowolony z efektu końcowego, to z upływem czasu zyskałem nowe umiejętności i widzę, że
-                wiele rzeczy można by jeszcze udoskonalić lub podejść do nich inaczej. <br>
-                Istnieje plan, aby w przyszłości
-                poddać stronę modernizacji i rozważyć dodanie nowych funkcjonalności. <br> <br>
+                W ostatnim czasie wprowadziłem do strony kilka zmian dot. optymalizacji oraz organizacji kodu, a także
+                utworzenia 2 paneli nawigacyjnych w zależności od wielkości ekranu. <br>
+                Projekt jest regularnie aktualizowany. <br> <br>
 
                 Poniżej można zobaczyć efekt końcowy w formie osadzonego widoku iframe.
             </p>
@@ -161,42 +160,42 @@
 
             <p>
                 Jest to projekt aplikacji webowej której zadaniem jest wsparcie firmy w kontekcie logistycznym. <br>
-                Na tą chwilę użytkownik może: <br>
-                - Tworzyć i przechowywać zlecenia transportowe w zewnętrznej bazie danych <br>
-                - Przeglądać utworzone zlecenia w dedykowanej do tego sekcji, a także filtrować oraz sortować wyniki
-                wyszukiwania <br> <br>
-
-                Ma to na celu poprawę przejrzystości otrzymywanych zleceń od kontrahentów oraz niwelowanie pomyłek
+                Główny cel aplikacji to poprawa przejrzystości otrzymywanych zleceń od kontrahentów oraz niwelowanie
+                pomyłek
                 podczas zlecania pracy dla pilotów - firma sama wpisuję dane zlecenia do przygotowanego formularza, co
                 pozwala utrzymać porządek oraz daję możliwość szybkiego podglądu zlecenia w razie potrzeby.<br> <br>
 
-                Dodatkowo całość jest zabezpieczona poprzez etap rejestracji/logowania wraz hasłem, całość danych jest
-                przechowywana w zewnętrznej bazie danych, a dokładnie w
-                <b class="link-warning">{</b>
-                MongoDB
-                <b class="link-warning">}</b> -
-                gdzie hasło dodatkowo jest poddane "haszowaniu" co znacząco poprawia bezpieczeństwo. <br> <br>
+                Na tą chwilę użytkownik może:
+                <br> <br>
+                - Utworzyć konto, a także zalogować się
+                <br> <br>
+
+                - Tworzyć i przechowywać zlecenia transportowe w zewnętrznej bazie danych
+                <br> <br>
+
+                - Całość danych przechowywana jest w chmurzę
+                <b class="link-warning">{</b>MongoDB<b class="link-warning">}</b>
+                a samo hasło jest zabezpieczone dzięki modułowi
+                <b class="link-warning">{</b>bcrypt<b class="link-warning">}</b>
+                <br> <br>
+
+                - Filtrować oraz sortować wyniki wyszukiwania w czasie rzeczywistym
+                <br> <br>
+
+                - Przeglądać utworzone zlecenia w dedykowanej do tego sekcji, z pełną możliwością edycji danych
+                <br> <br>
+
+                - Wysłać zlecenie do pilotów poprzez przygotowany formularz na
+                <b class="link-warning">{</b>Slack'a<b class="link-warning">}</b>
+                <br> <br>
 
                 Cała aplikacja jest oparta o serwer który został utworzony w
-                <b class="link-warning">{</b>
-                Node.js / Express.js
-                <b class="link-warning">}</b> -
+                <b class="link-warning">{</b>Express.js<b class="link-warning">}</b> -
                 co zapewnia aplikacji szybkość i wydajność oraz lekkość w działaniu, jak i sprawia, że cała aplikacja
-                może być łatwo rozbudowywana w ramach dostępu do ogromnej biblioteki oraz narzędzi. <br>
-                Wsparcie dla szablonów
-                <b class="link-warning">{</b>
-                EJS
-                <b class="link-warning">}</b>
-                oraz Middleware była dla mnie dodatkowym plusem. <br> <br>
+                może być łatwo rozbudowywana w ramach dostępu do ogromnej biblioteki oraz narzędzi. <br> <br>
 
-                Przyszłe plany obejmują implementację modułu do wysyłania zleceń do pilotów poprzez aplikację
-                <b class="link-warning">"</b>
-                Slack
-                <b class="link-warning">"</b>,
-                a także poprawy optymalizacji kodu, wyświetlania błędów oraz ogólnej poprawy komfortu użytkowania
-                aplikacji przez użytkownika. <br> <br>
-
-                Poniżej można zobaczyć efekt finalny, tym razem tylko na zdjęciach - kopie aplikacji udostępnie w sposób
+                Poniżej można zobaczyć stan rzeczywisty, póki co tylko na zdjęciach - kopie aplikacji udostępnie w
+                sposób
                 zabezpieczony dopiero gdy całość zostanie ukończona.
             </p>
 
@@ -308,7 +307,7 @@
         <span class="col-4 mt-1">
             Autor: <br>
             Patryk Pietrzyk <br>
-            2023
+            2024
         </span>
         <span class="col-4 mt-1">
             <div class="day"></div>
@@ -319,7 +318,7 @@
             <br>
             <select name="lngPick" id="lngPick" class="mt-1 mb-1" onchange="lngPick()">
                 <option value="Polish" class="PL" selected>PL</option>
-                <!-- <option value="English" class="ENG">ENG</option> -->
+                <option value="English" class="ENG">ENG</option>
             </select>
         </span>
     </div>

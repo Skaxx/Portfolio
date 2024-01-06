@@ -125,44 +125,51 @@
         </h1>
 
         <div id="bio-intro">
-            <p class="bio-intro-txt">
-                Mam na imię Patryk. <br> <br>
-
-                Jestem programistą z doświadczeniem w tworzeniu stron internetowych, jak i aplikacji
-                webowych.<br>
-
-                Pochodzę ze Śląska i własnie tutaj parę lat temu rozpocząłem swoją przygodę w branży
-                <b class="link-warning">IT</b> tworząc coraz to bardziej zaawansowane projekty. <br> <br>
-
-                Rozpoczynając od prostych stron napisanych w
-                <b class="link-warning">{</b>
-                HTML
-                <b class="link-warning">}</b>
-                aż do mojego najbardziej zaawansowanego projektu, który piszę w
-                <b class="link-warning">{</b>
-                Node.js / Express.js
-                <b class="link-warning">}</b> we współpracy z <b class="link-warning">AI</b>. <br>
-
-                Dzięki wykorzystaniu sztucznej inteligencji mogę tworzyć gotowe moduły, które następnie szybko
-                optymalizuję pod wymagania projektowe - dodatkowo <b class="link-warning">AI</b> pozwala mi analizować
-                dane, przeprowadzać tzw. Code Review, a także szukać inpiracji, jak i wspierać mnie kreatywnie, co
-                znacząco przyspiesza proces projektowania i tworzenia każdego projektu, który zostanie mi powierzony.
-                <br> <br>
-
-                Po więcej informacji zapraszam do sekcji
-                <a href="/about.html" target="_blank" class="link link-warning">
-                    O mnie
-                </a>
-                oraz do podstron poświęconych poszczególnym projektom.
-                <br> <br> <br>
-
-                Zapraszam! <br>
-                <i id="signature" style="font-family:  Rock Salt, cursive;">
-                    <a href="https://www.linkedin.com/in/patrykpietrzyk/" target="_blank" class="link link-warning">
-                        Pietrzyk Patryk
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="about.html">
+                        <img class="shadow img-fluid" id="profile-pic" src="img/prof.jpeg" alt="Profile Pic" width="350px">
                     </a>
-                </i>
-            </p>
+                </div>
+                <p class="bio-intro-txt col-lg-8">
+                    Hej! <br> <br>
+
+                    Nazywam się Patryk i jestem programistą z doświadczeniem w tworzeniu stron internetowych, jak i
+                    aplikacji
+                    webowych.<br>
+
+                    Pochodzę ze Śląska i własnie tutaj parę lat temu rozpocząłem swoją przygodę w branży
+                    <b class="link-warning">IT</b> tworząc coraz to bardziej zaawansowane projekty. <br> <br>
+
+                    Rozpoczynając od prostych stron napisanych w
+                    <b class="link-warning">{</b>HTML<b class="link-warning">}</b>
+                    aż do mojego najbardziej zaawansowanego projektu, który piszę w
+                    <b class="link-warning">{</b>Express.js<b class="link-warning">}</b>
+                    we współpracy z <b class="link-warning">AI</b>. <br>
+
+                    Dzięki wykorzystaniu sztucznej inteligencji mogę tworzyć gotowe moduły, które następnie szybko
+                    optymalizuję pod wymagania projektowe - dodatkowo <b class="link-warning">AI</b> pozwala mi
+                    analizować
+                    dane, przeprowadzać tzw. Code Review, a także szukać inpiracji, jak i wspierać mnie kreatywnie, co
+                    znacząco przyspiesza proces projektowania i tworzenia każdego projektu, który zostanie mi
+                    powierzony.
+                    <br> <br>
+
+                    Po więcej informacji zapraszam do sekcji
+                    <a href="/about.html" target="_blank" class="link link-warning">
+                        O mnie
+                    </a>
+                    oraz do podstron poświęconych poszczególnym projektom.
+                    <br> <br> <br>
+
+                    Zapraszam! <br>
+                    <i id="signature" style="font-family:  Rock Salt, cursive;">
+                        <a href="https://www.linkedin.com/in/patrykpietrzyk/" target="_blank" class="link link-warning">
+                            Pietrzyk Patryk
+                        </a>
+                    </i>
+                </p>
+            </div>
 
             <!-- Button trigger modal -->
             <button id="modal-btn-lng" type="button" class="btn btn-warning m-2" data-bs-toggle="modal"
@@ -178,19 +185,10 @@
                             <h5>Hey!</h5>
                             <br>
                             Did you know that you can change the website language to English from now on? <br> <br>
-                            You can do it at the bottom of the page, but not now - since a few days the english version
-                            of my portfolio is underconstruction - sorry for trouble :/
+                            You can do it at the bottom of the page, go for it! ^_^
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div>
-                <a href="about.html">
-                    <img class="shadow-lg" id="profile-pic" src="img/prof.jpeg" alt="Profile Pic" width="350px">
-                </a>
-                <br>
-                <span class="profile-pic-info">Chcesz dowiedzieć się więcej? Kliknij na mnie!</span>
             </div>
         </div>
     </div>
@@ -211,7 +209,6 @@
                 <h2 class="text-center">CERTYFIKATY</h2>
                 <br>
                 <div class="column">
-
                     <h4 class="text-center p-2">2022</h4>
 
                     <a href="documents/certyfikat-1.pdf" target="_blank">
@@ -254,7 +251,7 @@
         <span class="col-4 mt-1">
             Autor: <br>
             Patryk Pietrzyk <br>
-            2023
+            2024
         </span>
         <span class="col-4 mt-1">
             <div class="day"></div>
@@ -265,7 +262,7 @@
             <br>
             <select name="lngPick" id="lngPick" class="mt-1 mb-1" onchange="lngPick()">
                 <option value="Polish" class="PL" selected>PL</option>
-                <!-- <option value="English" class="ENG">ENG</option> -->
+                <option value="English" class="ENG">ENG</option>
             </select>
         </span>
     </div>
