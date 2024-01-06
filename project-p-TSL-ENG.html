@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="PL">
+<html lang="ENG">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pietrzyk Patryk - Web Dev</title>
+    <title>Pietrzyk Patryk - Frontend Developer</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -60,6 +60,7 @@
     <!-- JS -->
 
     <script defer src="js/master.js"></script>
+    <script defer src="js/TSL.js"></script>
 
 </head>
 
@@ -85,7 +86,6 @@
                         <a class="nav-link dropdown-toggle link-warning" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">My own projects</a>
                         <ul class="dropdown-menu dropdown-menu text-center">
-                            <li><a class="dropdown-item" href="project-p-squids-ENG.html">Squids™</a></li>
                             <li><a class="dropdown-item" href="project-p-TSL-ENG.html">Cargo calculator</a></li>
                         </ul>
                     </li>
@@ -113,16 +113,176 @@
         </h1>
 
         <div id="TSL-project">
+            <div class="content">
 
-            <p style="text-align: center; margin-top: 10em;">
-                WORK IN PROGRESS
-            </p>
+                <div>
+                    <p id="descTxt">
+                        The transport and cargo calculator is an online application whose main purpose is to calculate
+                        the total dimensions and total weight of oversize vehicles and their loads. In addition, the
+                        application will be able to suggest what type of transport permit the driver would need and what
+                        category - which will allow for legal driving of such a vehicle with a load. <br> <br>
 
+                        This project was born out of my personal initiative and the need to create a tool that could
+                        make work in the transport industry easier. <br>
+                        The application will be slowly developed, and additional features are planned, such as: <br>
+                        - Choice of lowering the axle, which increases the maximum lifting capacity <br>
+                        - Possibility to include lowered and extended trailers with the selection of a specific
+                        dimension <br>
+                        - Adding modules <br> <br>
+
+                        Due to the complexity of the project, currently the user can only use the basic application
+                        options such as: <br>
+                        - Selection of 2 trucks and 2 trailers with actual dimensions and weight <br>
+                        - Enter any dimensions of the load <br>
+                        - Calculate it by considering basic variables such as total height, width, and length, along
+                        with the overall weight. The program factors in both the dimensions and the actual weight during
+                        calculations, providing an accurate result. <br> <br>
+
+                        The program considers both the dimensions and actual weight in the calculations, resulting in an
+                        accurate outcome. <br> <br>
+
+                        The whole project was written using
+                        <b class="link-warning">{</b>Bootstrap<b class="link-warning">}</b> &
+                        <b class="link-warning">{</b>JavaScript<b class="link-warning">}</b> &
+                        <b class="link-warning">{</b>SCSS<b class="link-warning">}</b>
+                        and is based on the work of variables that are displayed appropriately. <br> <br>
+
+                        Below you can test the application for yourself.
+                    </p>
+                </div>
+
+                <div id="selectField" class="row">
+                    <div class="col-sm-6 mb-4">
+                        <h3>PICK THE TRUCK</h3>
+
+                        <select id="trucks" name="trucks" class="select">
+                            <option id="none" value="none" selected>EMPTY</option>
+                            <option id="scania1.1" value="ScaniaR450_4x4">Scania R450 4x4</option>
+                            <option id="scania1.2" value="ScaniaS770_8x4">Scania S770 8x4</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <h3>PICK THE TRAILER</h3>
+
+                        <select id="trailers" name="trailers" class="select">
+                            <option id="none" value="none" selected>EMPTY</option>
+                            <option id="nooteboom1.1" value="NooteboomEuro_2">Nooteboom Euro 2</option>
+                            <option id="goldhofer2.1" value="GoldhoferSPZ-GL">Goldhofer SPZ-GL</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div id="dimensions" class="column">
+                    <div id="truckValue">
+                        <h4>TRUCK DIMENSIONS</h4>
+
+                        <div>
+                            <p class="txt">HEIGHT</p>
+                            <p id="truckHeight" class="valueDimensions">...</p>
+                        </div>
+
+                        <div>
+                            <p class="txt">WIDTH</p>
+                            <p id="truckWidth" class="valueDimensions">...</p>
+                        </div>
+
+                        <div>
+                            <p class="txt">LENGHT</p>
+                            <p id="truckLong" class="valueDimensions">...</p>
+                        </div>
+
+                        <div>
+                            <p class="txt">WEIGHT</p>
+                            <p id="truckWeight" class="valueDimensions">...</p>
+                        </div>
+                    </div>
+
+                    <div id="trailerValue">
+                        <h4>TRAILERS DIMENSIONS</h4>
+
+                        <div>
+                            <p class="txt">HEIGHT</p>
+                            <p id="trailerHeight" class="valueDimensions">...</p>
+
+                            <div>
+                                <p class="txt">WIDTH</p>
+                                <p id="trailerWidth" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">LENGHT</p>
+                                <p id="trailerLong" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">WEIGHT</p>
+                                <p id="trailerWeight" class="valueDimensions">...</p>
+                            </div>
+                        </div>
+
+                        <div id="cargoValue">
+                            <h4>CARGO DIMENSIONS</h4>
+                            <p>PLease, use only CM and KG</p>
+
+                            <div>
+                                <p class="txtCargo">HEIGHT</p>
+                                <input type="text" id="cargoHeight">
+                            </div>
+
+                            <div>
+                                <p class="txtCargo">WIDTH</p>
+                                <input type="text" id="cargoWidth">
+                            </div>
+
+                            <div>
+                                <p class="txtCargo">LENGHT</p>
+                                <input type="text" id="cargoLength">
+                            </div>
+
+                            <div>
+                                <p class="txtCargo">WEIGHT</p>
+                                <input type="text" id="cargoWeight">
+                            </div>
+                        </div>
+
+                        <button id="btnAdding" class="btn btn-warning" onclick="showDimensions()">Add selected</button>
+
+                        <br>
+
+                        <button id="btnReset" class="btn btn-danger" onclick="resetDimensions()">Reset value</button>
+
+                        <div id="totalValue">
+                            <h4>TOTAL DIMENSIONS</h4>
+
+                            <div>
+                                <p class="txt">HEIGHT</p>
+                                <p id="totalHeight" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">WIDTH</p>
+                                <p id="totalWidth" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">LENGHT</p>
+                                <p id="totalLong" class="valueDimensions">...</p>
+                            </div>
+
+                            <div>
+                                <p class="txt">WEIGHT</p>
+                                <p id="totalWeight" class="valueDimensions">...</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
 
-    <div class="offcanvas offcanvas-start" style="background-image: url(img/white-waves.png);" tabindex="-1"
+    <div class="offcanvas offcanvas-start" style="background-image: url(../img/white-lines.png);" tabindex="-1"
         id="side-menu" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
@@ -138,7 +298,6 @@
                 <h2 class="text-center">CERTIFICATES</h2>
                 <br>
                 <div class="column">
-
                     <h4 class="text-center p-2">2022</h4>
 
                     <a href="documents/certyfikat-1.pdf" target="_blank">
@@ -179,7 +338,9 @@
             </a>
         </span>
         <span class="col-4 mt-1">
-            Created by: Patryk Pietrzyk <br> 2023
+            Created by: <br>
+            Patryk Pietrzyk <br>
+            2024
         </span>
         <span class="col-4 mt-1">
             <div class="day"></div>

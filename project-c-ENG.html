@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pietrzyk Patryk - Web Dev</title>
+    <title>Pietrzyk Patryk - Frontend Developer</title>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -81,7 +81,6 @@
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">My own projects</a>
                         <ul class="dropdown-menu dropdown-menu text-center">
-                            <li><a class="dropdown-item" href="project-p-squids-ENG.html">Squids™</a></li>
                             <li><a class="dropdown-item" href="project-p-TSL-ENG.html">Cargo calculator</a></li>
                         </ul>
                     </li>
@@ -101,48 +100,151 @@
     </nav>
 
     <div class="container">
+        <div id="project-c-1">
 
-        <h1 class="greetings-txt">
-            <span class="greetings-txt-animation">C</span>
-            <span class="greetings-txt-animation">o</span>
-            <span class="greetings-txt-animation">m</span>
-            <span class="greetings-txt-animation">m</span>
-            <span class="greetings-txt-animation">e</span>
-            <span class="greetings-txt-animation">r</span>
-            <span class="greetings-txt-animation">c</span>
-            <span class="greetings-txt-animation">i</span>
-            <span class="greetings-txt-animation">a</span>
-            <span class="greetings-txt-animation">l</span>
-            <br>
-            <span class="greetings-txt-animation">P</span>
-            <span class="greetings-txt-animation">r</span>
-            <span class="greetings-txt-animation">o</span>
-            <span class="greetings-txt-animation">j</span>
-            <span class="greetings-txt-animation">e</span>
-            <span class="greetings-txt-animation">c</span>
-            <span class="greetings-txt-animation">t</span>
-            <span class="greetings-txt-animation">s</span>
-        </h1>
+            <h1 class="greetings-txt">
+                <a class="link link-dark" href="https://www.andytrans.pl" target="_blank">
+                    <span class="greetings-txt-animation">A</span>
+                    <span class="greetings-txt-animation">N</span>
+                    <span class="greetings-txt-animation">D</span>
+                    <span class="greetings-txt-animation">Y</span>
+                    <span class="greetings-txt-animation">T</span>
+                    <span class="greetings-txt-animation">R</span>
+                    <span class="greetings-txt-animation">A</span>
+                    <span class="greetings-txt-animation">N</span>
+                    <span class="greetings-txt-animation">S</span>
+                </a>
+            </h1>
 
-        <div id="iframe-project-c-1">
-            <iframe src="https://andytrans.pl" width="100%" height="80%">
-            </iframe>
+
+            <h2>
+                <b id="project-1" class="link-warning">I</b> Website
+            </h2>
 
             <p>
-                Website project for company <a href="https://andytrans.pl" target="_blank"
-                    class="link link-warning">ANDYTRANS</a> was my first commercial project that highly increased my
-                code
-                & development skills.
-                <br>
-                <br>
-                link for <a href="https://andytrans.pl" target="_blank" class="link link-warning">ANDYTRANS</a> website.
+                Website Design Project for AndyTrans Sp. z o.o. <br>
+                This is my first order that I had the opportunity to deal with. The whole thing was completed without
+                any major difficulties, although as a novice developer, I
+                initially felt stressed, fearing whether I would meet the client's specific requirements but it went
+                quite well :] <br> <br>
+
+                The website is the company's portfolio and aims to present our competences in the field of oversized
+                transport to potential customers and also includes a photo gallery showing completed orders. <br> <br>
+
+                To create this project I used
+                <b class="link-warning">{</b>Bootstrap<b class="link-warning">}</b> &
+                <b class="link-warning">{</b>JavaScript<b class="link-warning">}</b> &
+                <b class="link-warning">{</b>SCSS<b class="link-warning">}</b>
+                <br> <br>
+
+                Recently, I have introduced several changes to the website regarding the optimalization and organization
+                of the code, as well as the creation of 2 navigation panels depending on the screen size. <br>
+                The project is updated regularly. <br> <br>
+
+                Below you can see the end result in the form of an embedded iframe view.
             </p>
 
-        </div>
+            <div id="iframe">
+                <iframe src="https://andytrans.pl" frameborder="0" width="100%" height="550px"></iframe>
+            </div>
 
+            <h2>
+                <b id="project-2" class="link-warning">II</b>
+                <i class="link-warning">"</i>
+                LMS - AndyTrans
+                <i class="link-warning">"</i>
+            </h2>
+
+            <p>
+                This web application supports the company's logistics operations. <br>
+                The main purpose of the application is to improve the transparency of orders received from contractors
+                and to eliminate mistakes when ordering work for pilots - the company itself enters the order data into
+                a prepared form, which helps maintain order and gives the ability to quickly preview the order if
+                necessary. <br> <br>
+
+                At this point, the user can:
+                <br> <br>
+                - Create an account and log in
+                <br> <br>
+
+                - Create and store transport orders in an external database
+                <br> <br>
+
+                Data is securely stored in
+                <b class="link-warning">{</b>MongoDB<b class="link-warning">}</b>
+                Cloud with password encryption using the
+                <b class="link-warning">{</b>bcrypt<b class="link-warning">}</b>
+                module
+                <br> <br>
+
+                - Real-time filtering and sorting of search results
+                <br> <br>
+
+                - View created orders in a dedicated section, with full data editing options
+                <br> <br>
+
+                - Send the orders to pilots via a prepared form using
+                <b class="link-warning">{</b>Slack'a<b class="link-warning">}</b>
+                integration
+                <br> <br>
+
+                The entire application is based on a server that was created in
+                <b class="link-warning">{</b>Express.js<b class="link-warning">}</b> -
+                which ensures the application's speed, efficiency and ease of operation, and makes the entire
+                application easily expandable with access to a huge library and tools. <br> <br>
+
+                Below, you can preview the current state of the application through photos. The application copy will be
+                securely available upon completion.
+            </p>
+
+            <div id="carouselControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/LM - img for portfolio/reg-1.png" class="d-block w-100" alt="slide-1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/log-1.png" class="d-block w-100" alt="slide-2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/hello-1.png" class="d-block w-100" alt="slide-3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/newOrder-1.png" class="d-block w-100" alt="slide-4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/newOrder-2.png" class="d-block w-100" alt="slide-5">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/newOrder-3.png" class="d-block w-100" alt="slide-6">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/orderHistory-1.png" class="d-block w-100" alt="slide-7">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/infoCard-1.png" class="d-block w-100" alt="slide-8">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/infoCard-2.png" class="d-block w-100" alt="slide-9">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./img/LM - img for portfolio/infoCard-3.png" class="d-block w-100" alt="slide-10">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
     </div>
 
-    <div class="offcanvas offcanvas-start" style="background-image: url(img/white-waves.png);" tabindex="-1"
+    <div class="offcanvas offcanvas-start" style="background-image: url(../img/white-lines.png);" tabindex="-1"
         id="side-menu" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
@@ -158,7 +260,6 @@
                 <h2 class="text-center">CERTIFICATES</h2>
                 <br>
                 <div class="column">
-
                     <h4 class="text-center p-2">2022</h4>
 
                     <a href="documents/certyfikat-1.pdf" target="_blank">
@@ -199,7 +300,9 @@
             </a>
         </span>
         <span class="col-4 mt-1">
-            Created by: Patryk Pietrzyk <br> 2023
+            Created by: <br>
+            Patryk Pietrzyk <br>
+            2024
         </span>
         <span class="col-4 mt-1">
             <div class="day"></div>
